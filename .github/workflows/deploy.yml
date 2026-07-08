@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    env:
+      pages: write
       HUGO_VERSION: "0.147.9"
     steps:
       - name: Checkout

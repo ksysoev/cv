@@ -73,9 +73,9 @@
       <div class="contacts">
         {{ with $r.basics.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
         {{ with $r.basics.phone }}<span>{{ . }}</span>{{ end }}
-        {{ with $r.basics.url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ end }}
+        {{ with $r.basics.url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}
         {{ range $r.basics.profiles }}
-          {{ if and .url (ne .network "LinkedIn") }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .network }}</a>{{ end }}
+          {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .network }}</a>{{ end }}
         {{ end }}
       </div>
     </header>

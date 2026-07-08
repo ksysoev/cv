@@ -24,7 +24,13 @@ It will:
 1. Trigger on pushes to `main`
 2. Convert `resume.yaml` -> `data/resume.json`
 3. Build Hugo site
-4. Deploy `public/` using GitHub Pages Actions
+4. Generate a downloadable PDF artifact at `public/cv.pdf` using `rvdwegen/action-jsonresume-convert`
+5. Deploy `public/` using GitHub Pages Actions
+
+PDF contract:
+- Published filename/location: `public/cv.pdf` (served as `/cv.pdf`)
+- CV page link label: `Download PDF`
+- Link behavior: direct download via `download` attribute (no forced new tab)
 
 ### One-time GitHub setup
 In your repository settings:

@@ -1,22 +1,22 @@
 name: Deploy Hugo resume to GitHub Pages
 
 on:
+  pull_request:
+    branches: ["main"]
   push:
     branches: ["main"]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: pages
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
     env:
       HUGO_VERSION: "0.147.9"
     steps:
@@ -47,6 +47,7 @@ jobs:
           fi
 
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Build
@@ -56,22 +57,49 @@ jobs:
         run: |
           ruby -ryaml -rjson -e 'File.write("resume.json", JSON.pretty_generate(YAML.safe_load(File.read("resume.yaml"))))'
 
-      - name: Generate CV PDF
-        uses: rvdwegen/action-jsonresume-convert@1a3bfb03c607b72281a44b481c74ac41bf0e2c35
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          theme: flat
-          resume_filepath: resume.json
-          output_html_filepath: public/cv.html
-          output_pdf_filepath: public/cv.pdf
+          node-version: "22"
+
+      - name: Generate CV PDF
+        run: |
+          npm install --no-save --no-package-lock --no-audit resume-cli jsonresume-theme-flat puppeteer
+          npx --no-install resume export public/cv.html --resume resume.json --theme flat
+          node -e '
+            const path = require("node:path");
+            const puppeteer = require("puppeteer");
+            (async () => {
+              const browser = await puppeteer.launch({
+                headless: true,
+                args: ["--no-sandbox", "--disable-setuid-sandbox"],
+              });
+              const page = await browser.newPage();
+              const htmlPath = "file://" + path.resolve("public/cv.html");
+              await page.goto(htmlPath, { waitUntil: "networkidle0" });
+              await page.pdf({
+                path: "public/cv.pdf",
+                format: "A4",
+                printBackground: true,
+              });
+              await browser.close();
+            })();
+          '
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

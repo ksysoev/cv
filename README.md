@@ -35,3 +35,7 @@ In your repository settings:
 
 After that, each push to `main` publishes the site to:
 `https://<username>.github.io/<repo>/`
+
+Notes:
+- `config.yaml` uses a neutral `baseURL` for local/dev portability.
+- CI sets the production `--baseURL` dynamically from repository owner/name.

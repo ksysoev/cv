@@ -1,4 +1,4 @@
-baseURL: "https://ksysoev.github.io/cv/"
+baseURL: "/"
 languageCode: "en-us"
 title: "Kirill Sysoev — Resume"
 theme: "PaperMod"
@@ -17,7 +17,3 @@ params:
   ShowCodeCopyButtons: false
   mainSections: []
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true

@@ -66,7 +66,8 @@ jobs:
 
       - name: Generate CV PDF
         run: |
-          npm install --no-save resume-cli jsonresume-theme-flat
+          npm install --no-save resume-cli jsonresume-theme-flat puppeteer
+          npx puppeteer browsers install chrome
           npx resume export public/cv.html --resume resume.json --theme flat
           npx resume export public/cv.pdf --resume resume.json --theme flat
 

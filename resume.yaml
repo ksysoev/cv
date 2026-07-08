@@ -6,7 +6,6 @@ basics:
   image: ''
   email: k.sysoev@me.com
   phone: "+60194877054"
-  url: https://www.linkedin.com/in/kirill-sysoev
   summary: Experienced Staff Engineer with deep expertise in backend development.
     Proven track record of leading engineering teams, architecting scalable systems,
     and driving technical excellence across diverse technology stacks. Strong background
@@ -32,158 +31,139 @@ work:
   location: Limassol, Cyprus
   startDate: 2025-11
   endDate: 2026-05
-  summary: Built an internal developer platform and high-scale API gateway.
   highlights:
-  - Designed and delivered an internal developer platform enabling service teams to
-    publish and manage APIs independently.
-  - Architected and shipped a custom Go-based API gateway on AWS with GitHub CI/CD
-    and on-demand deployments.
-  - Scaled the platform to 30M+ daily requests.
-  - Reduced API management costs by 97% (from $12,000+/month to about $300/month).
+  - Designed and delivered an internal developer platform enabling service teams to independently publish and manage APIs for third-party developers, improving autonomy and time-to-market across the organization.
+  - Architected and delivered a custom API gateway built on Go, deployed on AWS with a GitHub-based CI/CD pipeline supporting on-demand feature deployments. The solution scaled to handle 30M+ daily requests while reducing API management costs by 97% — from $12,000+/month to ~$300/month.
 - name: Deriv
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2024-07
   endDate: 2025-10
-  summary: Led Go adoption and cloud-native service development.
   highlights:
-  - Led Golang integration into existing technology ecosystem with standards and architectural
-    guidelines.
-  - Facilitated knowledge transfer through structured training initiatives.
-  - Engineered cloud-native AWS serverless solutions for authentication and event-driven
-    microservices communication.
-  - Automated deployments through infrastructure as code and CI/CD workflows.
+  - Leading GoLang integration within existing technology ecosystem, creating standardized development frameworks and architectural guidelines for scalable service development
+  - Facilitated knowledge transfer through structured training initiatives, building internal expertise in emerging technologies and development practices
+  - Engineered cloud-native solutions on AWS serverless platform, delivering robust authentication mechanisms and event-driven communication systems for microservices architecture
+  - Automated deployment lifecycle through infrastructure-as-code implementation, establishing reliable CI/CD processes that enhanced development workflow efficiency
 - name: CyberOwl
   position: Lead Software Developer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2024-03
   endDate: 2024-06
-  summary: Delivered enterprise inventory platform and raised engineering quality.
   highlights:
-  - Architected and delivered scalable inventory management system with Golang backend
-    and React frontend.
-  - Established development standards, code review process, and automated testing
-    frameworks.
-  - Mentored developers and enforced best practices for consistent code quality.
+  - Architected and delivered scalable inventory management system using Golang backend and React frontend, supporting enterprise-level operations
+  - Established development standards and led code review processes, implementing automated testing frameworks that reduced bug reports and improved release reliability
+  - Mentored development team through technical guidance and best practices enforcement, ensuring consistent code quality across all deliverables
 - name: Deriv
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2023-10
   endDate: 2024-03
-  summary: Drove critical initiatives and technical direction.
   highlights:
-  - Led development initiatives for business-critical projects.
-  - Drove performance optimization and stability improvements across critical systems.
-  - Authored and reviewed system design documents and technical standards.
-  - Defined technical roadmaps and mentored engineers through code reviews.
+  - Leading development initiatives for business-critical projects, ensuring delivery of high-impact solutions aligned with organizational objectives
+  - Drove performance optimization and stability improvements across system-critical components, enhancing overall platform reliability
+  - Writing and reviewing system design documents to establish technical standards and architectural best practices
+  - Developed strategic roadmaps and technical vision for key projects, guiding long-term development priorities
+  - Mentored engineering teams through rigorous code review processes, maintaining code quality and knowledge sharing
 - name: Deriv
   position: Technical Lead
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2023-01
   endDate: 2023-10
-  summary: Owned design, delivery oversight, and production reliability.
   highlights:
-  - Architected design specifications for features and integrations.
-  - Provided technical consultation and unblocked complex engineering decisions.
-  - Diagnosed and resolved production issues while leading high-priority project delivery.
+  - Architected detailed design specifications for feature development and system integrations, streamlining development workflows
+  - Provided expert technical consultation to team members, facilitating informed decision-making across complex projects
+  - Diagnosed and resolved production system issues, maintaining operational stability and service reliability
+  - Leading technical delivery of high-priority projects through strategic oversight and hands-on leadership
 - name: Deriv
   position: Team Lead
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2020-03
   endDate: 2023-01
-  summary: Scaled backend team operations and technical governance.
   highlights:
-  - Led a backend team of up to 14 engineers and improved delivery lifecycle efficiency.
-  - Aligned technical solutions with business priorities across trading platform enhancements.
-  - Established RFC process and code review governance for critical features.
-  - Led incident response and resolution to maintain operational resilience.
-  - Contributed to Deriv BeSquare program by creating backend curriculum and mentoring
-    IT talent.
+  - Scaled and optimized backend development operations by leading a diverse team of up to 14 engineers, implementing strategic process improvements that enhanced software delivery lifecycle efficiency
+  - Collaborated with senior stakeholders to align technical solutions with business objectives, ensuring timely delivery of trading platform enhancements while maintaining quality standards
+  - Established technical governance through standardized RFC processes and comprehensive code review protocols, personally developing system design documentation for critical platform features
+  - Built high-performance team culture through structured performance management, conducting regular career development sessions that supported individual growth trajectories within the organization
+  - Maintained operational resilience by leading production incident response and resolution efforts, combining technical problem-solving with team coordination to minimize business impact
+  - Demonstrated thought leadership by contributing to organizational talent development through the Deriv BeSquare program, structuring backend development curriculum and mentoring emerging IT professionals
 - name: Deriv
   position: Backend Developer
   location: Cyberjaya, Malaysia
   startDate: 2019-09
   endDate: 2020-03
-  summary: Contributed core backend and payments functionality.
   highlights:
-  - Conducted code reviews to maintain coding standards and reduce production defects.
-  - Developed and deployed P2P payment services.
-  - Implemented platform features and fixes for trading infrastructure reliability.
+  - Conducted code reviews across development teams, maintaining high coding standards and reducing production bugs by ensuring consistent code quality
+  - Developed and deployed P2P payment services, directly contributing to enhanced financial transaction capabilities and platform growth
+  - Implemented critical features and resolved system issues for trading platform infrastructure, improving overall functionality and system reliability
 - name: REG.RU
   position: Senior Software Engineer
   location: Samara Region, Russian Federation
   startDate: 2017-08
   endDate: 2019-07
-  summary: Maintained high-performance hosting platform backend systems.
   highlights:
-  - Maintained distributed caching, sessions, authentication, and async job processing
-    systems.
-  - Developed bulk email infrastructure for outreach and notifications.
-  - Implemented partner and affiliate tracking systems.
-  - Participated in collaborative code review and engineering process improvements.
+  - Maintained and optimized high-performance backend systems including distributed caching, session management, user authentication, and asynchronous job processing for large-scale web hosting platform
+  - Developed robust email communication infrastructure with bulk messaging capabilities to support customer outreach and automated notification systems
+  - Implemented partner management and affiliate tracking system using modern software architecture patterns to support business development initiatives
+  - Participated in collaborative code review workflow ensuring adherence to software engineering best practices and continuous improvement of development processes
 - name: uCoz
   position: Web Developer
   location: Saint Petersburg, Russian Federation
   startDate: 2016-08
   endDate: 2017-08
-  summary: Worked on SaaS platform capabilities and large-scale crawler tooling.
   highlights:
-  - Enhanced a SaaS platform supporting over 1M active websites.
-  - Built proprietary CMS market research tooling for 10M+ websites.
-  - Optimized crawler throughput to approximately 1,000 sites/minute with 1,000+ evaluation
-    parameters.
+  - Enhanced platform capabilities for a major SaaS solution supporting 1+ million active websites, directly impacting user experience and platform reliability
+  - Development of proprietary CMS market research tool, solving complex data collection challenges across 10+ million websites
+  - Optimized crawler performance to achieve 1,000 sites/minute analysis speed, implementing multi-criteria evaluation system with 1,000+ assessment parameters
+  - Generated comprehensive market insights enabling data-driven strategic decisions for platform development and competitive positioning
 - name: i20.biz
   position: Frontend Developer
   location: Novosibirsk Region, Russian Federation
   startDate: 2016-05
   endDate: 2016-07
-  summary: Built user-facing tools for photo management workflows.
   highlights:
-  - Created photo management solution using Angular.
-  - Designed and implemented intuitive UI for complex photo workflows.
-  - Contributed to back-office application improving client efficiency.
+  - Created comprehensive photo management solution using Angular, addressing client needs for organized visual asset storage
+  - Designed and implemented user-friendly interface that simplified complex photo collection workflows
+  - Was involved in development of back-office application that improved client efficiency in managing digital photo libraries
+  - Delivered responsive web platform enabling seamless photo organization and access across devices
 - name: Freelance Web Development
   position: Freelance Web Developer
   location: Saint Petersburg, Russian Federation
   startDate: 2014-12
   endDate: 2016-04
-  summary: Delivered custom web solutions and data extraction systems.
   highlights:
-  - Designed concurrent web crawling systems for automated data extraction.
-  - Built scalable applications and services with Mojolicious.
-  - Translated client business requirements into technical implementations.
+  - Designed and implemented concurrent web crawling systems for automated data extraction from diverse online databases and websites
+  - Leveraged Mojolicious web framework to build scalable applications and services, demonstrating adaptability across varied project requirements
+  - Collaborated with clients to translate business needs into technical solutions, delivering meaningful results through strategic technology implementation
 - name: HOST
   position: Lead System Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2008-03
   endDate: 2015-12
-  summary: Designed resilient enterprise infrastructure and recovery capabilities.
   highlights:
-  - Designed fault-tolerant IT infrastructure with reduced single points of failure.
-  - Optimized virtualization and backup systems for improved performance and efficiency.
-  - Delivered disaster recovery solutions with reliability and compliance focus.
-  - Maintained enterprise hardware, storage networks, and backup technologies.
+  - Designed resilient IT infrastructure solutions that eliminated single points of failure and minimized business disruption for enterprise clients across multiple industry sectors
+  - Optimized virtualization platforms and backup systems to enhance operational efficiency, enabling clients to achieve measurable improvements in system performance and resource allocation
+  - Collaborated with cross-functional teams to deliver tailored disaster recovery solutions that met stringent reliability requirements and regulatory compliance standards
+  - Maintained and troubleshot enterprise-grade hardware systems, storage networks, and backup technologies, ensuring consistent service delivery and client satisfaction
 - name: EvlNet LLC
   position: IT Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2007-04
   endDate: 2008-02
-  summary: Managed Microsoft-based infrastructure for an educational institution.
   highlights:
-  - Managed mission-critical Microsoft IT infrastructure.
-  - Integrated branch offices into centralized domain network.
-  - Implemented VPN and firewall security with Microsoft ISA.
-  - Supported and improved MS Exchange communication systems.
+  - Managed mission-critical Microsoft IT infrastructure for private educational institution, ensuring operational continuity
+  - Streamlined multi-location operations by integrating branch offices into centralized domain network environment
+  - Strengthened network security through implementation of VPN infrastructure and firewall security using Microsoft ISA servers
+  - Sustained and enhanced MS Exchange communication platform, supporting organization-wide productivity
+  - Advanced technical proficiency in IT infrastructure management and complex system integration projects
 - name: WebPlus
   position: First-Line Support Specialist
   location: Saint Petersburg, Russian Federation
   startDate: 2006-11
   endDate: 2007-04
-  summary: Provided technical troubleshooting and client support.
   highlights:
-  - Diagnosed and resolved internet connectivity issues for clients.
-  - Delivered targeted technical recommendations to restore services.
-  - Built strong troubleshooting and customer communication skills.
+  - Diagnosed and resolved complex internet connectivity issues for diverse client base, ensuring minimal service disruption and optimal network performance
+  - Analyzed technical problems systematically to deliver targeted recommendations and solutions that restored uninterrupted internet services
+  - Enhanced technical troubleshooting capabilities while developing strong customer service expertise in fast-paced support environment
 skills:
 - name: Backend Engineering
   keywords:
@@ -213,11 +193,5 @@ languages:
   fluency: Full Professional
 - language: Russian
   fluency: Native or Bilingual
-certificates:
-- name: Kubernetes for the Absolute Beginners - Hands-on
-- name: Ultimate Rust Crash Course
-- name: 'The Complete SQL Bootcamp: Go from Zero to Hero'
-- name: Introduction to Cloud Computing on AWS for Beginners
-- name: Grafana
 education: []
 projects: []

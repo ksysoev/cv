@@ -44,9 +44,17 @@ jobs:
             mkdir -p data
             yq -o=json '.' resume.yaml > data/resume.json
 
-      - name: Build
-        run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+      - name: Compute baseURL
+        id: vars
+        run: |
+          if [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
+            echo "baseurl=https://${{ github.repository_owner }}.github.io/" >> "$GITHUB_OUTPUT"
+          else
+            echo "baseurl=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
+          fi
 
+      - name: Build
+        run: hugo --minify --baseURL "${{ steps.vars.outputs.baseurl }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

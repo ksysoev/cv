@@ -37,16 +37,12 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install conversion dependencies
-        run: pip install pyyaml
-
       - name: Convert resume.yaml to data/resume.json
-        run: python scripts/convert_resume.py
+        uses: mikefarah/yq@v4.44.3
+        with:
+          cmd: |
+            mkdir -p data
+            yq -o=json '.' resume.yaml > data/resume.json
 
       - name: Build
         run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"

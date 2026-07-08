@@ -9,14 +9,12 @@ This repository builds a modern, minimal resume site with **Hugo** and deploys i
 ## Local run
 1. Install dependencies:
    - Hugo (extended)
-   - Python 3
-2. Install Python package:
-   - `pip install pyyaml`
-3. Convert resume data:
-   - `python scripts/convert_resume.py`
-4. Build site:
+   - `yq` (mikefarah/yq v4+)
+2. Convert resume data:
+   - `mkdir -p data && yq -o=json '.' resume.yaml > data/resume.json`
+3. Build site:
    - `hugo --minify`
-5. Serve locally:
+4. Serve locally:
    - `hugo server`
 
 ## GitHub Pages deployment

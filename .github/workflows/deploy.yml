@@ -32,12 +32,10 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Convert resume.yaml to data/resume.json
-        uses: mikefarah/yq@v4.44.3
-        with:
-          cmd: |
-            mkdir -p data
-            yq -o=json '.' resume.yaml > data/resume.json
+      - name: Prepare Hugo data file
+        run: |
+          mkdir -p data
+          cp resume.yaml data/resume.yaml
 
       - name: Compute baseURL
         id: vars
@@ -48,8 +46,12 @@ jobs:
             echo "baseurl=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Build
         run: hugo --minify --baseURL "${{ steps.vars.outputs.baseurl }}"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -17,6 +17,7 @@ jobs:
     permissions:
       contents: read
       pages: write
+    env:
       HUGO_VERSION: "0.147.9"
     steps:
       - name: Checkout

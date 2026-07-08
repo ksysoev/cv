@@ -1,6 +1,8 @@
 name: Deploy Hugo resume to GitHub Pages
 
 on:
+  pull_request:
+    branches: ["main"]
   push:
     branches: ["main"]
   workflow_dispatch:
@@ -47,6 +49,7 @@ jobs:
           fi
 
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Build
@@ -56,20 +59,25 @@ jobs:
         run: |
           ruby -ryaml -rjson -e 'File.write("resume.json", JSON.pretty_generate(YAML.safe_load(File.read("resume.yaml"))))'
 
-      - name: Generate CV PDF
-        uses: rvdwegen/action-jsonresume-convert@1a3bfb03c607b72281a44b481c74ac41bf0e2c35
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          theme: flat
-          resume_filepath: resume.json
-          output_html_filepath: public/cv.html
-          output_pdf_filepath: public/cv.pdf
+          node-version: "20"
+
+      - name: Generate CV PDF
+        run: |
+          npm install --no-save resume-cli jsonresume-theme-flat
+          npx resume export public/cv.html --resume resume.json --theme flat
+          npx resume export public/cv.pdf --resume resume.json --theme flat
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:

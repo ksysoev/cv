@@ -52,6 +52,18 @@ jobs:
       - name: Build
         run: hugo --minify --baseURL "${{ steps.vars.outputs.baseurl }}"
 
+      - name: Convert resume YAML to JSONResume
+        run: |
+          ruby -ryaml -rjson -e 'File.write("resume.json", JSON.pretty_generate(YAML.safe_load(File.read("resume.yaml"))))'
+
+      - name: Generate CV PDF
+        uses: rvdwegen/action-jsonresume-convert@1a3bfb03c607b72281a44b481c74ac41bf0e2c35
+        with:
+          theme: flat
+          resume_filepath: resume.json
+          output_html_filepath: public/cv.html
+          output_pdf_filepath: public/cv.pdf
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

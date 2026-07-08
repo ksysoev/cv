@@ -32,8 +32,19 @@
     h1, h2, h3 { margin: 0; color: var(--accent); }
     h1 { font: 700 2rem/1.15 "Source Serif 4", Georgia, serif; letter-spacing: -0.02em; }
     .headline { margin-top: .3rem; font-size: 1.05rem; color: var(--muted); }
-    .contacts { margin-top: .9rem; display: flex; flex-wrap: wrap; gap: .45rem .8rem; font-size: .95rem; }
-    .contacts a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+    .contacts { margin-top: .9rem; display: flex; flex-wrap: wrap; gap: .45rem .8rem; font-size: .95rem; align-items: center; }
+    .contacts a:not(.download-link) { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+    .download-link {
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      padding: .2rem .65rem;
+      font-weight: 600;
+      background: #fff;
+    }
+    .download-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
     section { margin-top: 1.9rem; }
     h2 {
       font: 700 1.1rem/1.2 Inter, sans-serif;
@@ -71,6 +82,8 @@
       <h1>{{ $r.basics.name }}</h1>
       <p class="headline">{{ $r.basics.label }}</p>
       <div class="contacts">
+        {{/* PDF link contract: href="cv.pdf", label="Download PDF", behavior="direct download" */}}
+        <a class="download-link" href="cv.pdf" download>Download PDF</a>
         {{ with $r.basics.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
         {{ with $r.basics.phone }}<span>{{ . }}</span>{{ end }}
         {{ with $r.basics.url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}

@@ -1,0 +1,23 @@
+baseURL: "https://ksysoev.github.io/cv/"
+languageCode: "en-us"
+title: "Kirill Sysoev — Resume"
+theme: "PaperMod"
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+params:
+  defaultTheme: light
+  disableThemeToggle: true
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  mainSections: []
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -2,3 +2,4 @@ public/
 resources/
 data/resume.json
 .hugo_build.lock
+.plans/

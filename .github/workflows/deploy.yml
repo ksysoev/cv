@@ -62,10 +62,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Build print HTML from resume data
-        run: node scripts/render-cv-print.mjs resume.json public/cv-print.html
-
-      - name: Generate CV PDF
+      - name: Generate CV PDF from Hugo output
         run: |
           npm install --no-save --no-package-lock --no-audit puppeteer
           node -e '
@@ -77,8 +74,8 @@ jobs:
                 args: ["--no-sandbox", "--disable-setuid-sandbox"],
               });
               const page = await browser.newPage();
-              const htmlPath = "file://" + path.resolve("public/cv-print.html");
-              await page.goto(htmlPath, { waitUntil: "networkidle0" });
+              const htmlPath = "file://" + path.resolve("public/index.html");
+              await page.goto(htmlPath, { waitUntil: "load", timeout: 60000 });
               await page.emulateMediaType("print");
               await page.pdf({
                 path: "public/cv.pdf",

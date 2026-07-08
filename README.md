@@ -30,8 +30,9 @@ It will:
 PDF contract:
 - Published filename/location: `public/cv.pdf` (served at `…/cv.pdf` — `/cv.pdf` on user/org pages, `/<repo>/cv.pdf` on project pages)
 - Source HTML for PDF rendering: `public/index.html` (Hugo output)
-- CV page link label: `Download PDF`
+- CV page control: floating icon-only button on the top-right corner
 - Link behavior: direct download via `download` attribute (no forced new tab)
+- Downloaded filename: `Kirill-Sysoev-cv.pdf`
 
 ## Local PDF smoke test (consistency check)
 Use this quick check before merging style changes to ensure web and PDF stay aligned.

@@ -1,5 +1,6 @@
 public/
 resources/
-data/resume.json
+data/
+node_modules/
 .hugo_build.lock
 .plans/

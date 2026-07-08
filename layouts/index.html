@@ -37,9 +37,18 @@
     .download-link {
       border: 1px solid var(--accent);
       border-radius: 999px;
-      padding: .2rem .65rem;
+      padding: .24rem .62rem;
       font-weight: 600;
       background: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: .38rem;
+      line-height: 1;
+    }
+    .download-link svg {
+      width: .9rem;
+      height: .9rem;
+      display: block;
     }
     .download-link:focus-visible {
       outline: 2px solid var(--accent);
@@ -83,7 +92,14 @@
       <p class="headline">{{ $r.basics.label }}</p>
       <div class="contacts">
         {{/* PDF link contract: href="cv.pdf", label="Download PDF", behavior="direct download" */}}
-        <a class="download-link" href="cv.pdf" download>Download PDF</a>
+        <a class="download-link" href="cv.pdf" download aria-label="Download PDF resume">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v11"></path>
+            <path d="m7.5 10.5 4.5 4.5 4.5-4.5"></path>
+            <path d="M4 16.5v2A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5v-2"></path>
+          </svg>
+          <span>PDF</span>
+        </a>
         {{ with $r.basics.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
         {{ with $r.basics.phone }}<span>{{ . }}</span>{{ end }}
         {{ with $r.basics.url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}

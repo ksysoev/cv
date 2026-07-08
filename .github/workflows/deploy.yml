@@ -62,10 +62,12 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Build print HTML from resume data
+        run: node scripts/render-cv-print.mjs resume.json public/cv-print.html
+
       - name: Generate CV PDF
         run: |
-          npm install --no-save --no-package-lock --no-audit resume-cli jsonresume-theme-flat puppeteer
-          npx --no-install resume export public/cv.html --resume resume.json --theme flat
+          npm install --no-save --no-package-lock --no-audit puppeteer
           node -e '
             const path = require("node:path");
             const puppeteer = require("puppeteer");
@@ -75,12 +77,14 @@ jobs:
                 args: ["--no-sandbox", "--disable-setuid-sandbox"],
               });
               const page = await browser.newPage();
-              const htmlPath = "file://" + path.resolve("public/cv.html");
+              const htmlPath = "file://" + path.resolve("public/cv-print.html");
               await page.goto(htmlPath, { waitUntil: "networkidle0" });
+              await page.emulateMediaType("print");
               await page.pdf({
                 path: "public/cv.pdf",
                 format: "A4",
                 printBackground: true,
+                preferCSSPageSize: true,
               });
               await browser.close();
             })();

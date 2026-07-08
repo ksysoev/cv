@@ -28,7 +28,7 @@ It will:
 5. Deploy `public/` using GitHub Pages Actions
 
 PDF contract:
-- Published filename/location: `public/cv.pdf` (served as `/cv.pdf`)
+- Published filename/location: `public/cv.pdf` (served at `…/cv.pdf` — `/cv.pdf` on user/org pages, `/<repo>/cv.pdf` on project pages)
 - CV page link label: `Download PDF`
 - Link behavior: direct download via `download` attribute (no forced new tab)
 

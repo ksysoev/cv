@@ -226,7 +226,7 @@
           </div>
         </div>
         {{ with $r.basics.image }}
-          <img class="avatar" src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="Profile photo of {{ $r.basics.name }}" width="96" height="96" loading="eager" decoding="async" />
+          <img class="avatar" src="{{ . | strings.TrimPrefix "/" }}" alt="Profile photo of {{ $r.basics.name }}" width="96" height="96" loading="eager" decoding="async" />
         {{ end }}
       </div>
     </header>

@@ -114,6 +114,9 @@
       border-top: 1px solid var(--line);
       padding-top: .45rem;
     }
+    .skills-grid .chips {
+      margin-top: .38rem;
+    }
     .topline { display: flex; justify-content: space-between; gap: .8rem; align-items: baseline; flex-wrap: wrap; }
     .role { font-weight: 600; }
     .meta { color: var(--muted); font-size: .93rem; }
@@ -256,7 +259,7 @@
         {{ range $r.skills }}
           <article class="entry">
             <div class="role">{{ .name }}</div>
-            <div class="chips" style="margin-top:.38rem;">
+            <div class="chips">
               {{ range .keywords }}<span class="chip">{{ . }}</span>{{ end }}
             </div>
           </article>

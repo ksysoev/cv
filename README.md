@@ -96,24 +96,3 @@ node -e 'const path=require("node:path");const puppeteer=require("puppeteer");(a
 ```
 
 3. Compare `public/index.html` and `public/cv.pdf` visually.
-
-## Suggested GitHub repository metadata
-
-**Description (recommended):**
-> Single-source CV/resume site with Hugo: edit YAML once, publish web and PDF via GitHub Pages.
-
-**Topics/tags (recommended):**
-- `cv`
-- `resume`
-- `hugo`
-- `github-pages`
-- `yaml`
-- `static-site`
-- `pdf-generation`
-- `puppeteer`
-- `json-resume`
-- `personal-website`
-
-## Notes
-- `config.yaml` keeps a neutral `baseURL` for local/dev portability.
-- CI sets production `--baseURL` dynamically from repository owner/name.

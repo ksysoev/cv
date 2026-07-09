@@ -25,6 +25,7 @@ basics:
     url: https://github.com/ksysoev
 work:
 - name: Deriv
+  url: https://deriv.com
   position: Staff Engineer
   location: Limassol, Cyprus
   startDate: 2025-11
@@ -33,6 +34,7 @@ work:
   - Designed and delivered an internal developer platform enabling service teams to independently publish and manage APIs for third-party developers, improving autonomy and time-to-market across the organization.
   - Architected and delivered a custom API gateway built on Go, deployed on AWS with a GitHub-based CI/CD pipeline supporting on-demand feature deployments. The solution scaled to handle 30M+ daily requests while reducing API management costs by 97% — from $12,000+/month to ~$300/month.
 - name: Deriv
+  url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2024-07
@@ -43,6 +45,7 @@ work:
   - Engineered cloud-native solutions on AWS serverless platform, delivering robust authentication mechanisms and event-driven communication systems for microservices architecture
   - Automated deployment lifecycle through infrastructure-as-code implementation, establishing reliable CI/CD processes that enhanced development workflow efficiency
 - name: CyberOwl
+  url: https://cyberowl.io
   position: Lead Software Developer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2024-03
@@ -52,6 +55,7 @@ work:
   - Established development standards and led code review processes, implementing automated testing frameworks that reduced bug reports and improved release reliability
   - Mentored development team through technical guidance and best practices enforcement, ensuring consistent code quality across all deliverables
 - name: Deriv
+  url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2023-10
@@ -63,6 +67,7 @@ work:
   - Developed strategic roadmaps and technical vision for key projects, guiding long-term development priorities
   - Mentored engineering teams through rigorous code review processes, maintaining code quality and knowledge sharing
 - name: Deriv
+  url: https://deriv.com
   position: Technical Lead
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2023-01
@@ -73,6 +78,7 @@ work:
   - Diagnosed and resolved production system issues, maintaining operational stability and service reliability
   - Leading technical delivery of high-priority projects through strategic oversight and hands-on leadership
 - name: Deriv
+  url: https://deriv.com
   position: Team Lead
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2020-03
@@ -85,6 +91,7 @@ work:
   - Maintained operational resilience by leading production incident response and resolution efforts, combining technical problem-solving with team coordination to minimize business impact
   - Demonstrated thought leadership by contributing to organizational talent development through the Deriv BeSquare program, structuring backend development curriculum and mentoring emerging IT professionals
 - name: Deriv
+  url: https://deriv.com
   position: Backend Developer
   location: Cyberjaya, Malaysia
   startDate: 2019-09
@@ -94,6 +101,7 @@ work:
   - Developed and deployed P2P payment services, directly contributing to enhanced financial transaction capabilities and platform growth
   - Implemented critical features and resolved system issues for trading platform infrastructure, improving overall functionality and system reliability
 - name: REG.RU
+  url: https://www.reg.ru
   position: Senior Software Engineer
   location: Samara Region, Russian Federation
   startDate: 2017-08
@@ -104,6 +112,7 @@ work:
   - Implemented partner management and affiliate tracking system using modern software architecture patterns to support business development initiatives
   - Participated in collaborative code review workflow ensuring adherence to software engineering best practices and continuous improvement of development processes
 - name: uCoz
+  url: https://www.ucoz.com
   position: Web Developer
   location: Saint Petersburg, Russian Federation
   startDate: 2016-08
@@ -114,6 +123,7 @@ work:
   - Optimized crawler performance to achieve 1,000 sites/minute analysis speed, implementing multi-criteria evaluation system with 1,000+ assessment parameters
   - Generated comprehensive market insights enabling data-driven strategic decisions for platform development and competitive positioning
 - name: i20.biz
+  url: https://i20.biz
   position: Frontend Developer
   location: Novosibirsk Region, Russian Federation
   startDate: 2016-05
@@ -133,6 +143,7 @@ work:
   - Leveraged Mojolicious web framework to build scalable applications and services, demonstrating adaptability across varied project requirements
   - Collaborated with clients to translate business needs into technical solutions, delivering meaningful results through strategic technology implementation
 - name: HOST
+  url: https://hostco.ru/
   position: Lead System Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2008-03
@@ -143,6 +154,7 @@ work:
   - Collaborated with cross-functional teams to deliver tailored disaster recovery solutions that met stringent reliability requirements and regulatory compliance standards
   - Maintained and troubleshot enterprise-grade hardware systems, storage networks, and backup technologies, ensuring consistent service delivery and client satisfaction
 - name: EvlNet LLC
+  url: https://evlnet.ru
   position: IT Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2007-04

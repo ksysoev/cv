@@ -120,6 +120,16 @@
     .topline { display: flex; justify-content: space-between; gap: .8rem; align-items: baseline; flex-wrap: wrap; }
     .role { font-weight: 600; }
     .meta { color: var(--muted); font-size: .93rem; }
+    .role a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .role a:hover,
+    .role a:focus-visible {
+      color: var(--accent);
+      border-bottom-color: currentColor;
+    }
     ul { margin: .45rem 0 0 1.1rem; padding: 0; }
     li { margin: .15rem 0; }
     .chips { display: flex; flex-wrap: wrap; gap: .32rem .38rem; }
@@ -235,7 +245,7 @@
           <p class="headline">{{ $r.basics.label }}</p>
           <div class="contacts">
             {{ with $r.basics.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
-            {{ with $r.basics.phone }}<span>{{ . }}</span>{{ end }}
+            {{ with $r.basics.phone }}<a href="tel:{{ . }}">{{ . }}</a>{{ end }}
             {{ with $r.basics.url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}
             {{ range $r.basics.profiles }}
               {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .network }}</a>{{ end }}
@@ -272,7 +282,15 @@
       {{ range $r.work }}
         <article class="entry">
           <div class="topline">
-            <div class="role">{{ .position }} · {{ .name }}</div>
+            <div class="role">
+              {{ $company := .name }}
+              {{ .position }} ·
+              {{ with .url }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $company }}</a>
+              {{ else }}
+                {{ $company }}
+              {{ end }}
+            </div>
             <div class="meta">{{ .startDate }} — {{ .endDate }}</div>
           </div>
           <div class="meta">{{ .location }}</div>

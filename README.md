@@ -1,4 +1,4 @@
-# CV Resume Site — Hugo + YAML (Web + PDF)
+# CV Resume Site
 
 A personal resume/CV repository built with **Hugo**.
 

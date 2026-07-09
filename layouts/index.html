@@ -15,7 +15,7 @@
       --text: #141414;
       --muted: #555;
       --line: #e8e8e6;
-      --accent: #0f172a;
+      --accent: #3f5f97;
       --max: 920px;
     }
     * { box-sizing: border-box; }
@@ -43,7 +43,7 @@
       object-position: center 24%;
       background: #fff;
     }
-    .contacts a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+    .contacts a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
     .download-link {
       position: fixed;
       top: 1.2rem;
@@ -93,33 +93,49 @@
     }
     section { margin-top: 1.9rem; }
     h2 {
-      font: 700 1.1rem/1.2 Inter, sans-serif;
+      font: 700 1.03rem/1.2 Inter, sans-serif;
       text-transform: uppercase;
       letter-spacing: .08em;
       margin-bottom: .8rem;
+      color: var(--accent);
     }
     .summary { max-width: 78ch; color: #222; }
     .entry { padding: .75rem 0 .95rem; border-top: 1px solid var(--line); }
     .entry:first-of-type { border-top: 0; padding-top: .2rem; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .45rem 1rem;
+    }
+    .skills-grid .entry {
+      padding: .45rem 0 .58rem;
+    }
+    .skills-grid .entry:first-of-type {
+      border-top: 1px solid var(--line);
+      padding-top: .45rem;
+    }
+    .skills-grid .chips {
+      margin-top: .38rem;
+    }
     .topline { display: flex; justify-content: space-between; gap: .8rem; align-items: baseline; flex-wrap: wrap; }
     .role { font-weight: 600; }
     .meta { color: var(--muted); font-size: .93rem; }
     ul { margin: .45rem 0 0 1.1rem; padding: 0; }
     li { margin: .15rem 0; }
-    .chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .32rem .38rem; }
     .chip {
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: .12rem .62rem;
       font-size: .85rem;
-      background: #fff;
+      background: transparent;
+      color: var(--text);
     }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
     @media (max-width: 760px) {
       .wrap { padding-top: 1.8rem; }
       h1 { font-size: 1.7rem; }
-      .grid-2 { grid-template-columns: 1fr; }
       .hero { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
       .avatar {
         width: 82px;
         height: 82px;
@@ -181,6 +197,10 @@
         break-inside: avoid;
         page-break-inside: avoid;
       }
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: .28rem .7rem;
+      }
       .role {
         font-size: 10.2pt;
       }
@@ -191,9 +211,6 @@
       }
       ul {
         margin-top: .3rem;
-      }
-      .grid-2 {
-        gap: .8rem;
       }
     }
   </style>
@@ -237,6 +254,20 @@
     </section>
 
     <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        {{ range $r.skills }}
+          <article class="entry">
+            <div class="role">{{ .name }}</div>
+            <div class="chips">
+              {{ range .keywords }}<span class="chip">{{ . }}</span>{{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section>
       <h2>Experience</h2>
       {{ range $r.work }}
         <article class="entry">
@@ -255,38 +286,17 @@
       {{ end }}
     </section>
 
-    <div class="grid-2">
-      <section>
-        <h2>Skills</h2>
-        {{ range $r.skills }}
-          <article class="entry">
-            <div class="role">{{ .name }}</div>
-            <div class="chips" style="margin-top:.5rem;">
-              {{ range .keywords }}<span class="chip">{{ . }}</span>{{ end }}
-            </div>
-          </article>
-        {{ end }}
-      </section>
-
-      <section>
-        <h2>Languages</h2>
-        {{ range $r.languages }}
-          <article class="entry">
-            <div class="topline">
-              <div class="role">{{ .language }}</div>
-              <div class="meta">{{ .fluency }}</div>
-            </div>
-          </article>
-        {{ end }}
-
-        <h2 style="margin-top:1.4rem;">Certificates</h2>
-        {{ range $r.certificates }}
-          <article class="entry">
-            <div>{{ .name }}</div>
-          </article>
-        {{ end }}
-      </section>
-    </div>
+    <section>
+      <h2>Languages</h2>
+      {{ range $r.languages }}
+        <article class="entry">
+          <div class="topline">
+            <div class="role">{{ .language }}</div>
+            <div class="meta">{{ .fluency }}</div>
+          </div>
+        </article>
+      {{ end }}
+    </section>
   </main>
 </body>
 </html>

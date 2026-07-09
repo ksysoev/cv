@@ -6,6 +6,7 @@ basics:
   image: images/profile.jpeg
   email: k.sysoev@me.com
   phone: "+60194877054"
+  url: https://ksysoev.github.io
   summary: Experienced Staff Engineer with deep expertise in backend development.
     Proven track record of leading engineering teams, architecting scalable systems,
     and driving technical excellence across diverse technology stacks. Strong background
@@ -22,9 +23,6 @@ basics:
   - network: GitHub
     username: ksysoev
     url: https://github.com/ksysoev
-  - network: Blog
-    username: ksysoev
-    url: https://ksysoev.github.io
 work:
 - name: Deriv
   position: Staff Engineer
@@ -192,6 +190,5 @@ languages:
 - language: English
   fluency: Full Professional
 - language: Russian
-  fluency: Native or Bilingual
-education: []
+  fluency: Native
 projects: []

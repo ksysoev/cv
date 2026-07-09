@@ -19,7 +19,7 @@ So the editing workflow is: **update content once → publish to web + PDF**.
 
 ### 1) Prerequisites
 - Hugo (extended)
-- `yq` (mikefarah/yq v4+)
+- Node.js (for local PDF smoke test)
 
 ### 2) Build local data from source YAML
 ```bash

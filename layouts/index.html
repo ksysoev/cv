@@ -235,7 +235,7 @@
           <p class="headline">{{ $r.basics.label }}</p>
           <div class="contacts">
             {{ with $r.basics.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
-            {{ with $r.basics.phone }}<span>{{ . }}</span>{{ end }}
+            {{ with $r.basics.phone }}<a href="tel:{{ . }}">{{ . }}</a>{{ end }}
             {{ with $r.basics.url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}
             {{ range $r.basics.profiles }}
               {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .network }}</a>{{ end }}

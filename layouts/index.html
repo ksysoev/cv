@@ -102,12 +102,24 @@
     .summary { max-width: 78ch; color: #222; }
     .entry { padding: .75rem 0 .95rem; border-top: 1px solid var(--line); }
     .entry:first-of-type { border-top: 0; padding-top: .2rem; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .45rem 1rem;
+    }
+    .skills-grid .entry {
+      padding: .45rem 0 .58rem;
+    }
+    .skills-grid .entry:first-of-type {
+      border-top: 1px solid var(--line);
+      padding-top: .45rem;
+    }
     .topline { display: flex; justify-content: space-between; gap: .8rem; align-items: baseline; flex-wrap: wrap; }
     .role { font-weight: 600; }
     .meta { color: var(--muted); font-size: .93rem; }
     ul { margin: .45rem 0 0 1.1rem; padding: 0; }
     li { margin: .15rem 0; }
-    .chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .32rem .38rem; }
     .chip {
       border: 1px solid var(--line);
       border-radius: 999px;
@@ -120,6 +132,7 @@
       .wrap { padding-top: 1.8rem; }
       h1 { font-size: 1.7rem; }
       .hero { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
       .avatar {
         width: 82px;
         height: 82px;
@@ -181,6 +194,10 @@
         break-inside: avoid;
         page-break-inside: avoid;
       }
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: .28rem .7rem;
+      }
       .role {
         font-size: 10.2pt;
       }
@@ -235,14 +252,16 @@
 
     <section>
       <h2>Skills</h2>
-      {{ range $r.skills }}
-        <article class="entry">
-          <div class="role">{{ .name }}</div>
-          <div class="chips" style="margin-top:.5rem;">
-            {{ range .keywords }}<span class="chip">{{ . }}</span>{{ end }}
-          </div>
-        </article>
-      {{ end }}
+      <div class="skills-grid">
+        {{ range $r.skills }}
+          <article class="entry">
+            <div class="role">{{ .name }}</div>
+            <div class="chips" style="margin-top:.38rem;">
+              {{ range .keywords }}<span class="chip">{{ . }}</span>{{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
     </section>
 
     <section>

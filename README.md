@@ -58,11 +58,11 @@ hugo --minify
 
 Workflow: `.github/workflows/deploy.yml`
 
-On push to `main`, CI will:
-1. Convert `resume.yaml` → `data/resume.json`
-2. Build Hugo site
+On push to `main` (and on PRs for build-only validation), CI will:
+1. Copy `resume.yaml` → `data/resume.yaml`
+2. Build Hugo site with a computed `--baseURL`
 3. Render PDF from `public/index.html`
-4. Publish `public/` to GitHub Pages
+4. Publish `public/` to GitHub Pages (pushes only)
 
 ### One-time GitHub setup
 In repository settings:

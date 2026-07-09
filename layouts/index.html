@@ -282,7 +282,15 @@
       {{ range $r.work }}
         <article class="entry">
           <div class="topline">
-            <div class="role">{{ .position }} · {{ $company := .name }}{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $company }}</a>{{ else }}{{ $company }}{{ end }}</div>
+            <div class="role">
+              {{ $company := .name }}
+              {{ .position }} ·
+              {{ with .url }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $company }}</a>
+              {{ else }}
+                {{ $company }}
+              {{ end }}
+            </div>
             <div class="meta">{{ .startDate }} — {{ .endDate }}</div>
           </div>
           <div class="meta">{{ .location }}</div>

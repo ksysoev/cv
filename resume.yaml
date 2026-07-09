@@ -60,7 +60,7 @@ work:
   endDate: 2024-06
   summary: Delivered enterprise inventory platform and raised engineering quality.
   highlights:
-  - Architected and delivered scalable inventory management system with Golang backend
+  - Architected and delivered scalable inventory management system with Go backend
     and React frontend.
   - Established development standards, code review process, and automated testing
     frameworks.

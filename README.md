@@ -37,9 +37,10 @@ hugo --minify
 ## How PDF naming works
 
 PDF filename is derived from `resume.yaml` `basics.name`:
-- slug(`basics.name`) + `.pdf`
+- lowercase the name
+- replace non-`[a-z0-9]` runs with `-`
+- trim leading/trailing `-`
 - fallback: `resume.pdf` when `basics.name` is missing/empty
-
 The download button on the page and the CI-generated PDF artifact use the same filename.
 
 ## How deployment works

@@ -2,16 +2,18 @@
 "$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Kirill Sysoev
-  label: Software Engineer
+  label: Platform Engineer / Staff Engineer
   image: images/profile.jpeg
   email: k.sysoev@me.com
   phone: "+60194877054"
   url: https://ksysoev.github.io
-  summary: Experienced Staff Engineer with deep expertise in backend development.
-    Proven track record of leading engineering teams, architecting scalable systems,
-    and driving technical excellence across diverse technology stacks. Strong background
-    in Perl, Go, and software architecture. Passionate about continuous learning and
-    emerging technologies.
+  summary: Staff Engineer focused on platform engineering, cloud-native backend systems,
+    and developer enablement. Experienced in designing internal developer platforms,
+    API gateways, CI/CD workflows, infrastructure as code, and AWS-based services that
+    help product teams ship independently and reliably. Strong background in Go, Perl,
+    distributed systems, microservices, and software architecture, with a track record
+    of technical leadership, mentoring, production troubleshooting, and improving
+    platform reliability and engineering standards.
   location:
     city: Nha Trang
     region: Khanh Hoa
@@ -232,29 +234,39 @@ work:
   - Built strong troubleshooting, customer communication, and service-restoration skills in
     a fast-paced support environment.
 skills:
-- name: Backend Engineering
+- name: Platform Engineering
   keywords:
-  - Go
-  - Perl
-  - Microservices
+  - Internal Developer Platforms
+  - Developer Enablement
   - API Gateway
-  - System Design
-  - Distributed Systems
-- name: Cloud & Platform
-  keywords:
-  - AWS
-  - Serverless
   - CI/CD
   - Infrastructure as Code
   - Kubernetes
   - Grafana
-- name: Leadership
+- name: Cloud & Infrastructure
   keywords:
+  - AWS
+  - Serverless
+  - Docker
+  - Linux
+- name: Backend & Distributed Systems
+  keywords:
+  - Go
+  - Distributed Systems
+  - Event-Driven Architecture
+  - Message Queues
+  - PostgreSQL
+  - Redis
+- name: Architecture & Technical Leadership
+  keywords:
+  - System Design
+  - Software Architecture
+  - Domain-Driven Design
+  - Technical Strategy
   - Team Leadership
   - Mentoring
+  - Coaching
   - Code Review
-  - Technical Strategy
-  - Architecture Governance
 languages:
 - language: English
   fluency: Full Professional

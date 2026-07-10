@@ -2,16 +2,18 @@
 "$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Kirill Sysoev
-  label: Software Engineer
+  label: Platform Engineer / Staff Engineer
   image: images/profile.jpeg
   email: k.sysoev@me.com
   phone: "+60194877054"
   url: https://ksysoev.github.io
-  summary: Experienced Staff Engineer with deep expertise in backend development.
-    Proven track record of leading engineering teams, architecting scalable systems,
-    and driving technical excellence across diverse technology stacks. Strong background
-    in Perl, Go, and software architecture. Passionate about continuous learning and
-    emerging technologies.
+  summary: Staff Engineer focused on platform engineering, cloud-native backend systems,
+    and developer enablement. Experienced in designing internal developer platforms,
+    API gateways, CI/CD workflows, infrastructure as code, and AWS-based services that
+    help product teams ship independently and reliably. Strong background in Go, Perl,
+    distributed systems, microservices, and software architecture, with a track record
+    of technical leadership, mentoring, production troubleshooting, and improving
+    platform reliability and engineering standards.
   location:
     city: Nha Trang
     region: Khanh Hoa
@@ -40,7 +42,6 @@ work:
   startDate: 2024-07
   endDate: 2025-10
   highlights:
-  - Leading GoLang integration within existing technology ecosystem, creating standardized development frameworks and architectural guidelines for scalable service development
   - Facilitated knowledge transfer through structured training initiatives, building internal expertise in emerging technologies and development practices
   - Engineered cloud-native solutions on AWS serverless platform, delivering robust authentication mechanisms and event-driven communication systems for microservices architecture
   - Automated deployment lifecycle through infrastructure-as-code implementation, establishing reliable CI/CD processes that enhanced development workflow efficiency
@@ -175,29 +176,39 @@ work:
   - Analyzed technical problems systematically to deliver targeted recommendations and solutions that restored uninterrupted internet services
   - Enhanced technical troubleshooting capabilities while developing strong customer service expertise in fast-paced support environment
 skills:
-- name: Backend Engineering
+- name: Platform Engineering
   keywords:
-  - Go
-  - Perl
-  - Microservices
+  - Internal Developer Platforms
+  - Developer Enablement
   - API Gateway
-  - System Design
-  - Distributed Systems
-- name: Cloud & Platform
-  keywords:
-  - AWS
-  - Serverless
   - CI/CD
   - Infrastructure as Code
   - Kubernetes
   - Grafana
-- name: Leadership
+- name: Cloud & Infrastructure
   keywords:
+  - AWS
+  - Serverless
+  - Docker
+  - Linux
+- name: Backend & Distributed Systems
+  keywords:
+  - Go
+  - Distributed Systems
+  - Event-Driven Architecture
+  - Message Queues
+  - PostgreSQL
+  - Redis
+- name: Architecture & Technical Leadership
+  keywords:
+  - System Design
+  - Software Architecture
+  - Domain-Driven Design
+  - Technical Strategy
   - Team Leadership
   - Mentoring
+  - Coaching
   - Code Review
-  - Technical Strategy
-  - Architecture Governance
 languages:
 - language: English
   fluency: Full Professional

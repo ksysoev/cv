@@ -30,34 +30,39 @@ work:
   location: Limassol, Cyprus
   startDate: 2025-11
   endDate: 2026-05
-  summary: Built a third-party API developer platform enabling
-    internal application teams to publish their servicses APIs for external developers with independent lifecycle
-    management. Also designed and developed custom tailored API Gateway and 
-    migrrated All production traffic from external SaaS platform to new internal API gatwway platform.
+  summary: Built a third-party API developer platform that enabled internal
+    application teams to publish service APIs for external developers with independent
+    lifecycle management. Designed and delivered a custom API gateway, then migrated
+    all production traffic from an external SaaS platform to the new internal gateway.
   highlights:
-  - Designed and delivered the developer platform for third-party APIs, giving service
+  - Designed and delivered a developer platform for third-party APIs, giving service
     teams ownership of API configuration, documentation, and release workflows while making
     APIs discoverable and usable by external developers.
-  - Architected and shipped a custom Go-based API gateway platform on AWS with GitHub CI/CD and
-    feature deployments.
-  - Migrarted all production traffic from exteranl SaaS API Gateways and scaled the gateway platform to 30M+ daily requests 
-    while reducing API management costs from $12,000+/month to about $400/month.
+  - Architected and shipped a custom Go-based API gateway platform on AWS with GitHub
+    CI/CD and controlled feature deployments.
+  - Migrated all production traffic from external SaaS API gateways and scaled the
+    internal gateway platform to 30M+ daily requests, reducing API management costs from
+    $12,000+/month to about $400/month.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2024-07
   endDate: 2025-10
-  summary: Creating and leading team responsible for integration layer of brand new trading platform.
-    Designed and drived implementation of 3 development platforms to provide unified way 
-    for applications teams solve common problems. Service to Service authentication(based on AWS Cognito),
-    Event-driven communication(Based on several AWS service but core of that service was build around AWS Event Bridge)
-    and API gateway to provide access for FE and mobile apps to applications servcies(based on Zuplo Saas platform)
+  summary: Created and led the team responsible for the integration layer of a new
+    trading platform. Designed and drove implementation of three development platforms
+    that gave application teams a unified way to solve common integration problems,
+    including service-to-service authentication based on AWS Cognito, event-driven communication
+    built around AWS EventBridge, and an API gateway for frontend and mobile access to
+    application services based on the Zuplo SaaS platform.
   highlights:
-  - All 3 platforms was build with GitOps approach, providing a way for each application team move independently
-    and deliver their changes to staging and production environments with minimal external dependencies.
-  - Designed  and integrated convention for service to service communication to make it secure, tracable  and auditable through out whole platform.
-  - Based on event driven communication service builded audit log that provided to application teams easy way to debug what is happening with their services. 
+  - Built all three platforms using a GitOps approach, enabling each application team
+    to move independently and deliver changes to staging and production with minimal
+    external dependencies.
+  - Designed and introduced conventions for service-to-service communication, making
+    platform interactions secure, traceable, and auditable end to end.
+  - Built an audit-log capability on top of the event-driven communication platform,
+    giving application teams a straightforward way to understand and debug service behavior.
 - name: CyberOwl
   url: https://cyberowl.io
   position: Lead Software Developer
@@ -80,12 +85,12 @@ work:
   summary: Drove business-critical engineering initiatives, combining hands-on delivery with
     technical direction, system design, performance optimization, and mentoring.
   highlights:
-  - Led development initiatives for business-critical project, keeping technical execution
+  - Led development initiatives for business-critical projects, keeping technical execution
     aligned with organizational priorities.
-  - Drove performance optimization and stability improvements across critical platyform
-    components to improve reliability. One of examples identified main bottlenecks on 
-    API gateway and delivered performance optimization significantly reducing delays 
-    in delivering market data to clients  
+  - Drove performance optimization and stability improvements across critical platform
+    components to improve reliability. For example, identified major API gateway bottlenecks
+    and delivered optimizations that significantly reduced delays in delivering market data
+    to clients.
   - Authored and reviewed system design documents and technical standards to guide consistent
     architectural decisions.
 - name: Deriv
@@ -99,7 +104,8 @@ work:
   highlights:
   - Established RFC processes and review governance for critical features, including
     system design documentation for complex platform changes.
-  - Architected detailed design specifications for integrating new trading platform into Deriv ecosystem. 
+  - Architected detailed design specifications for integrating a new trading platform into
+    the Deriv ecosystem.
   - Diagnosed and resolved production issues.
 - name: Deriv
   url: https://deriv.com
@@ -137,7 +143,7 @@ work:
   location: Samara Region, Russian Federation
   startDate: 2017-08
   endDate: 2019-07
-  summary: Maintained and extended backend systems for a large-scale domain registrant and hosting platform,
+  summary: Maintained and extended backend systems for a large-scale domain registrar and hosting platform,
     including caching, authentication, asynchronous processing, email, and partner tracking.
   highlights:
   - Maintained high-performance backend components for distributed caching, session management,
@@ -152,7 +158,7 @@ work:
   location: Saint Petersburg, Russian Federation
   startDate: 2016-08
   endDate: 2017-08
-  summary: Enhanced a large scale SaaS CMS platform and built high-throughput market research
+  summary: Enhanced a large-scale SaaS CMS platform and built high-throughput market research
     crawler tooling for CMS analysis at multi-million-site scale.
   highlights:
   - Enhanced platform capabilities for a SaaS product supporting over 1M active websites,
@@ -189,14 +195,15 @@ work:
   location: Saint Petersburg, Russian Federation
   startDate: 2008-03
   endDate: 2015-12
-  summary: Designed and build resilient enterprise infrastructure, virtualization,
-    backup, storage, and disaster recovery solutions for improving clients business contienity.
+  summary: Designed and built resilient enterprise infrastructure, virtualization,
+    backup, storage, and disaster recovery solutions to improve clients' business continuity.
   highlights:
-  - Build disaster recovery metro-cluster based on VMware vSphere and SRM for Bank client
-  - Designed and planed hardware migration to differenct city(Moscow->Saint Petersber) for building 
-    disaster recovery site to provide region outage protection for biggest online retailer.
-  - Building virtualization(VMware) and backup solution(HP DP) for 8 regions branches of central bank of Russsia Federation 
-  - Migrated Oracle RAC cluster to new IBM Power hardware. 
+  - Built a disaster recovery metro-cluster based on VMware vSphere and SRM for a banking client.
+  - Designed and planned a hardware migration from Moscow to Saint Petersburg to build
+    a disaster recovery site with regional outage protection for a major online retailer.
+  - Built VMware virtualization and HP Data Protector backup solutions for eight regional
+    branches of the Central Bank of the Russian Federation.
+  - Migrated an Oracle RAC cluster to new IBM Power hardware.
 - name: EvlNet LLC
   url: https://evlnet.ru
   position: IT Engineer
@@ -209,8 +216,7 @@ work:
   - Managed mission-critical Microsoft IT infrastructure to support daily operations.
   - Integrated branch offices into a centralized domain network environment.
   - Implemented VPN connectivity and firewall security using Microsoft ISA servers.
-  - Supported MS Exchange communication systems for organization-wide
-    productivity.
+  - Supported MS Exchange communication systems for organization-wide productivity.
 - name: WebPlus
   position: First-Line Support Specialist
   location: Saint Petersburg, Russian Federation

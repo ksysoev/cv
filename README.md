@@ -36,9 +36,9 @@ hugo --minify
 
 ## How PDF naming works
 
-PDF filename is derived from `resume.yaml`:
-- If `meta.pdfFileName` exists, it is used.
-- Otherwise it falls back to a slug from `basics.name` + `-cv.pdf`.
+PDF filename is derived from `resume.yaml` `basics.name`:
+- slug(`basics.name`) + `.pdf`
+- fallback: `resume.pdf` when `basics.name` is missing/empty
 
 The download button on the page and the CI-generated PDF artifact use the same filename.
 

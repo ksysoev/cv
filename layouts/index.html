@@ -1,14 +1,7 @@
 {{- $r := site.Data.resume -}}
-{{- $pdfFileName := "" -}}
-{{- with $r.meta.pdfFileName }}{{- $pdfFileName = . -}}{{- end -}}
-{{- if not $pdfFileName -}}
-  {{- $slug := $r.basics.name | urlize -}}
-  {{- if not $slug -}}{{- $slug = "resume" -}}{{- end -}}
-  {{- $pdfFileName = printf "%s-cv.pdf" $slug -}}
-{{- end -}}
-{{- if not (strings.HasSuffix (lower $pdfFileName) ".pdf") -}}
-  {{- $pdfFileName = printf "%s.pdf" $pdfFileName -}}
-{{- end -}}
+{{- $pdfSlug := $r.basics.name | default "" | urlize -}}
+{{- if not $pdfSlug -}}{{- $pdfSlug = "resume" -}}{{- end -}}
+{{- $pdfFileName := printf "%s.pdf" $pdfSlug -}}
 <!doctype html>
 <html lang="en">
 <head>

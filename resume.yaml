@@ -38,11 +38,10 @@ work:
   - Designed and delivered a developer platform for third-party APIs, giving service
     teams ownership of API configuration, documentation, and release workflows while making
     APIs discoverable and usable by external developers.
-  - Architected and shipped a custom Go-based API gateway platform on AWS with GitHub
-    CI/CD and controlled feature deployments.
-  - Migrated all production traffic from external SaaS API gateways and scaled the
-    internal gateway platform to 30M+ daily requests, reducing API management costs from
-    $12,000+/month to about $400/month.
+  - Architected and shipped a custom Go-based API gateway platform on AWS EKS with GitHub
+    CI/CD and feature deployments.
+  - Migrated all production traffic from external SaaS API gateways to in-house solution and scaled the
+    gateway platform to 30M+ daily requests, reducing API management costs from $12,000+/month to about $400/month.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
@@ -53,7 +52,7 @@ work:
     trading platform. Designed and drove implementation of three development platforms
     that gave application teams a unified way to solve common integration problems,
     including service-to-service authentication based on AWS Cognito, event-driven communication
-    built around AWS EventBridge, and an API gateway for frontend and mobile access to
+    built around AWS EventBridge, and an API gateway for frontend and mobile apps to
     application services based on the Zuplo SaaS platform.
   highlights:
   - Built all three platforms using a GitOps approach, enabling each application team
@@ -66,7 +65,7 @@ work:
 - name: CyberOwl
   url: https://cyberowl.io
   position: Lead Software Developer
-  location: Cyberjaya, Selangor, Malaysia
+  location: Remote 
   startDate: 2024-03
   endDate: 2024-06
   summary: Delivered an enterprise inventory management platform and strengthened engineering
@@ -74,7 +73,6 @@ work:
   highlights:
   - Architected and delivered a scalable inventory management system with a Go backend
     and React frontend for enterprise operations.
-  - Established development standards, code review processes, and automated testing
     frameworks.
   - Mentored developers and reinforced engineering best practices to raise consistency and
     code quality across deliverables.
@@ -142,7 +140,7 @@ work:
 - name: REG.RU
   url: https://www.reg.ru
   position: Senior Software Engineer
-  location: Samara Region, Russian Federation
+  location: Remote 
   startDate: 2017-08
   endDate: 2019-07
   summary: Maintained and extended backend systems for a large-scale domain registrar and hosting platform,
@@ -172,14 +170,14 @@ work:
 - name: i20.biz
   url: https://i20.biz
   position: Frontend Developer
-  location: Novosibirsk Region, Russian Federation
+  location: Remote 
   startDate: 2016-05
   endDate: 2016-07
   summary: Built Angular-based user interfaces for photo management and back-office workflows,
     turning complex asset-management tasks into clearer client-facing tools.
 - name: Freelance Web Development
   position: Freelance Web Developer
-  location: Saint Petersburg, Russian Federation
+  location: Remote 
   startDate: 2014-12
   endDate: 2016-04
   summary: Delivered custom web applications and automated data extraction systems, translating

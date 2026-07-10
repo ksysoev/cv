@@ -53,9 +53,19 @@ jobs:
       - name: Build
         run: hugo --minify --baseURL "${{ steps.vars.outputs.baseurl }}"
 
-      - name: Convert resume YAML to JSONResume
+      - name: Compute PDF filename from resume.yaml
         run: |
-          ruby -ryaml -rjson -e 'File.write("resume.json", JSON.pretty_generate(YAML.safe_load(File.read("resume.yaml"))))'
+          ruby -ryaml -e '
+            resume = YAML.safe_load(File.read("resume.yaml")) || {}
+            pdf = resume.dig("meta", "pdfFileName").to_s.strip
+            if pdf.empty?
+              slug = resume.dig("basics", "name").to_s.downcase.gsub(/[^a-z0-9]+/, "-").gsub(/^-|-$/, "")
+              slug = "resume" if slug.empty?
+              pdf = "#{slug}-cv.pdf"
+            end
+            pdf += ".pdf" unless pdf.downcase.end_with?(".pdf")
+            File.open(ENV.fetch("GITHUB_ENV"), "a") { |f| f.puts("PDF_FILE_NAME=#{pdf}") }
+          '
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -77,8 +87,9 @@ jobs:
               const htmlPath = "file://" + path.resolve("public/index.html");
               await page.goto(htmlPath, { waitUntil: "load", timeout: 60000 });
               await page.emulateMediaType("print");
+              const pdfName = process.env.PDF_FILE_NAME || "resume-cv.pdf";
               await page.pdf({
-                path: "public/cv.pdf",
+                path: "public/" + pdfName,
                 format: "A4",
                 printBackground: true,
                 preferCSSPageSize: true,

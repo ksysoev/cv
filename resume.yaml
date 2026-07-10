@@ -1,5 +1,7 @@
 ---
 "$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+meta:
+  pdfFileName: kirill-sysoev-cv.pdf
 basics:
   name: Kirill Sysoev
   label: Platform Engineer / Staff Engineer

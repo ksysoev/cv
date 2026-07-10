@@ -1,4 +1,14 @@
 {{- $r := site.Data.resume -}}
+{{- $pdfFileName := "" -}}
+{{- with $r.meta.pdfFileName }}{{- $pdfFileName = . -}}{{- end -}}
+{{- if not $pdfFileName -}}
+  {{- $slug := $r.basics.name | urlize -}}
+  {{- if not $slug -}}{{- $slug = "resume" -}}{{- end -}}
+  {{- $pdfFileName = printf "%s-cv.pdf" $slug -}}
+{{- end -}}
+{{- if not (strings.HasSuffix (lower $pdfFileName) ".pdf") -}}
+  {{- $pdfFileName = printf "%s.pdf" $pdfFileName -}}
+{{- end -}}
 <!doctype html>
 <html lang="en">
 <head>
@@ -226,8 +236,7 @@
   </style>
 </head>
 <body>
-  {{/* PDF link contract: href="cv.pdf", downloaded filename="Kirill-Sysoev-cv.pdf", behavior="direct download" */}}
-  <a class="download-link no-print" href="cv.pdf" download="Kirill-Sysoev-cv.pdf" aria-label="Download resume as PDF" title="Download PDF">
+  <a class="download-link no-print" href="{{ $pdfFileName }}" download="{{ $pdfFileName }}" aria-label="Download resume as PDF" title="Download PDF">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M12 3.5v10.7"></path>
       <path d="m7.8 10.9 4.2 4.2 4.2-4.2"></path>

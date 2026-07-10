@@ -64,8 +64,6 @@ work:
     platform interactions secure, traceable, and auditable end to end.
   - Built an audit-log capability on top of the event-driven communication platform,
     giving application teams a straightforward way to understand and debug service behavior.
-  - Facilitated knowledge transfer through structured training initiatives, building
-    internal expertise in emerging technologies and development practices.
 - name: CyberOwl
   url: https://cyberowl.io
   position: Lead Software Developer

@@ -72,8 +72,10 @@ work:
   summary: Delivered an enterprise inventory management platform and strengthened engineering
     practices through standards, reviews, testing, and mentoring.
   highlights:
-  - Architected and delivered a scalable inventory management system with a Golang backend
+  - Architected and delivered a scalable inventory management system with a Go backend
     and React frontend for enterprise operations.
+  - Established development standards, code review processes, and automated testing
+    frameworks.
   - Mentored developers and reinforced engineering best practices to raise consistency and
     code quality across deliverables.
 - name: Deriv

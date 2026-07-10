@@ -272,4 +272,34 @@ languages:
   fluency: Full Professional
 - language: Russian
   fluency: Native
-projects: []
+projects:
+- name: Make It Public
+  url: https://github.com/ksysoev/make-it-public
+  description: Open-source Go reverse proxy and tunneling service for securely exposing private/local services to the public internet.
+  type: Open Source
+  highlights:
+  - Designed a client/server architecture that routes public HTTP and TCP traffic to services running behind NAT or private networks.
+  - Built secure token-based authentication and TLS-enabled deployment options for safer public exposure of local services.
+  - Packaged the tool for practical developer workflows with Docker, Homebrew, prebuilt releases, CI, and automated tests.
+  keywords:
+  - Go
+  - Reverse Proxy
+  - Tunneling
+  - TLS
+  - Docker
+  - CI/CD
+- name: wsget
+  url: https://github.com/ksysoev/wsget
+  description: Open-source Go CLI for interactive WebSocket testing, scripting, and debugging.
+  type: Open Source
+  highlights:
+  - Built an interactive WebSocket client supporting text, JSON, and binary messages with optional session output capture.
+  - Implemented terminal editing features including request history, fuzzy search, autocomplete, and keyboard-driven workflows.
+  - Added macro automation and packaged releases through Go install, Homebrew, and downloadable binaries.
+  keywords:
+  - Go
+  - CLI
+  - WebSocket
+  - Developer Tools
+  - Testing
+  - Automation

@@ -277,6 +277,38 @@
       </div>
     </section>
 
+    {{ with $r.projects }}
+    <section>
+      <h2>Projects</h2>
+      {{ range . }}
+        <article class="entry">
+          <div class="topline">
+            <div class="role">
+              {{ $projectName := .name }}
+              {{ with .url }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $projectName }}</a>
+              {{ else }}
+                {{ $projectName }}
+              {{ end }}
+            </div>
+            {{ with .type }}<div class="meta">{{ . }}</div>{{ end }}
+          </div>
+          {{ with .description }}<p>{{ . }}</p>{{ end }}
+          {{ with .highlights }}
+            <ul>
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+          {{ with .keywords }}
+            <div class="chips">
+              {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+            </div>
+          {{ end }}
+        </article>
+      {{ end }}
+    </section>
+    {{ end }}
+
     <section>
       <h2>Experience</h2>
       {{ range $r.work }}

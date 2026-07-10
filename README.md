@@ -24,7 +24,7 @@ So the editing workflow is: **update content once → publish to web + PDF**.
 ### 2) Build local data from source YAML
 ```bash
 mkdir -p data
-yq -o=json '.' resume.yaml > data/resume.json
+cp resume.yaml data/resume.yaml
 ```
 
 ### 3) Run locally
@@ -40,7 +40,7 @@ hugo --minify
 ## Typical editing workflow
 
 1. Edit resume content in `resume.yaml`
-2. Regenerate `data/resume.json`
+2. Regenerate `data/resume.yaml`
 3. Preview with `hugo server`
 4. Validate final build with `hugo --minify`
 5. Commit and push to `main` to trigger deployment
@@ -48,7 +48,7 @@ hugo --minify
 ## Repository map
 
 - `resume.yaml` — source of truth for resume content
-- `data/resume.json` — generated JSON used by templates
+- `data/resume.yaml` — generated YAML used by templates
 - `layouts/index.html` — CV page template/layout
 - `config.yaml` — Hugo site configuration
 - `.github/workflows/deploy.yml` — CI build + GitHub Pages deployment

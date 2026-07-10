@@ -279,6 +279,33 @@
       </div>
     </section>
 
+    <section>
+      <h2>Experience</h2>
+      {{ range $r.work }}
+        <article class="entry">
+          <div class="topline">
+            <div class="role">
+              {{ $company := .name }}
+              {{ .position }} ·
+              {{ with .url }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $company }}</a>
+              {{ else }}
+                {{ $company }}
+              {{ end }}
+            </div>
+            <div class="meta">{{ .startDate }} — {{ .endDate }}</div>
+          </div>
+          <div class="meta">{{ .location }}</div>
+          {{ with .summary }}<p>{{ . }}</p>{{ end }}
+          {{ with .highlights }}
+            <ul>
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+        </article>
+      {{ end }}
+    </section>
+
     {{ with $r.projects }}
     <section>
       <h2>Projects</h2>
@@ -310,33 +337,6 @@
       {{ end }}
     </section>
     {{ end }}
-
-    <section>
-      <h2>Experience</h2>
-      {{ range $r.work }}
-        <article class="entry">
-          <div class="topline">
-            <div class="role">
-              {{ $company := .name }}
-              {{ .position }} ·
-              {{ with .url }}
-                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $company }}</a>
-              {{ else }}
-                {{ $company }}
-              {{ end }}
-            </div>
-            <div class="meta">{{ .startDate }} — {{ .endDate }}</div>
-          </div>
-          <div class="meta">{{ .location }}</div>
-          {{ with .summary }}<p>{{ . }}</p>{{ end }}
-          {{ with .highlights }}
-            <ul>
-              {{ range . }}<li>{{ . }}</li>{{ end }}
-            </ul>
-          {{ end }}
-        </article>
-      {{ end }}
-    </section>
 
     <section>
       <h2>Languages</h2>

@@ -1,6 +1,6 @@
 baseURL: "/"
 languageCode: "en-us"
-title: "Resume Site"
+title: "Kirill Sysoev — Resume"
 
 params:
   defaultTheme: light

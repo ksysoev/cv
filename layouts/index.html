@@ -1,5 +1,5 @@
 {{- $r := site.Data.resume -}}
-{{- $pdfSlug := $r.basics.name | default "" | urlize -}}
+{{- $pdfSlug := $r.basics.name | default "" | lower | replaceRE "[^a-z0-9]+" "-" | replaceRE "^-+|-+$" "" -}}
 {{- if not $pdfSlug -}}{{- $pdfSlug = "resume" -}}{{- end -}}
 {{- $pdfFileName := printf "%s.pdf" $pdfSlug -}}
 <!doctype html>

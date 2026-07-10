@@ -32,149 +32,209 @@ work:
   location: Limassol, Cyprus
   startDate: 2025-11
   endDate: 2026-05
+  summary: Built a third-party API developer platform that enabled internal
+    application teams to publish service APIs for external developers with independent
+    lifecycle management. Designed and delivered a custom API gateway, then migrated
+    all production traffic from an external SaaS platform to the new internal gateway.
   highlights:
-  - Designed and delivered an internal developer platform enabling service teams to independently publish and manage APIs for third-party developers, improving autonomy and time-to-market across the organization.
-  - Architected and delivered a custom API gateway built on Go, deployed on AWS with a GitHub-based CI/CD pipeline supporting on-demand feature deployments. The solution scaled to handle 30M+ daily requests while reducing API management costs by 97% — from $12,000+/month to ~$300/month.
+  - Designed and delivered a developer platform for third-party APIs, giving service
+    teams ownership of API configuration, documentation, and release workflows while making
+    APIs discoverable and usable by external developers.
+  - Architected and shipped a custom Go-based API gateway platform on AWS EKS with GitHub
+    CI/CD and feature deployments.
+  - Migrated all production traffic from external SaaS API gateways to in-house solution and scaled the
+    gateway platform to 30M+ daily requests, reducing API management costs from $12,000+/month to about $400/month.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2024-07
   endDate: 2025-10
+  summary: Created and led the team responsible for the integration layer of a new
+    trading platform. Designed and drove implementation of three development platforms
+    that gave application teams a unified way to solve common integration problems,
+    including service-to-service authentication based on AWS Cognito, event-driven communication
+    built around AWS EventBridge, and an API gateway for frontend and mobile apps to
+    application services based on the Zuplo SaaS platform.
   highlights:
-  - Facilitated knowledge transfer through structured training initiatives, building internal expertise in emerging technologies and development practices
-  - Engineered cloud-native solutions on AWS serverless platform, delivering robust authentication mechanisms and event-driven communication systems for microservices architecture
-  - Automated deployment lifecycle through infrastructure-as-code implementation, establishing reliable CI/CD processes that enhanced development workflow efficiency
+  - Built all three platforms using a GitOps approach, enabling each application team
+    to move independently and deliver changes to staging and production with minimal
+    external dependencies.
+  - Designed and introduced conventions for service-to-service communication, making
+    platform interactions secure, traceable, and auditable end to end.
+  - Built an audit-log capability on top of the event-driven communication platform,
+    giving application teams a straightforward way to understand and debug service behavior.
+  - Facilitated knowledge transfer through structured training initiatives, building
+    internal expertise in emerging technologies and development practices.
 - name: CyberOwl
   url: https://cyberowl.io
   position: Lead Software Developer
-  location: Cyberjaya, Selangor, Malaysia
+  location: Remote 
   startDate: 2024-03
   endDate: 2024-06
+  summary: Delivered an enterprise inventory management platform and strengthened engineering
+    practices through standards, reviews, testing, and mentoring.
   highlights:
-  - Architected and delivered scalable inventory management system using Golang backend and React frontend, supporting enterprise-level operations
-  - Established development standards and led code review processes, implementing automated testing frameworks that reduced bug reports and improved release reliability
-  - Mentored development team through technical guidance and best practices enforcement, ensuring consistent code quality across all deliverables
+  - Architected and delivered a scalable inventory management system with a Go backend
+    and React frontend for enterprise operations.
+    frameworks.
+  - Mentored developers and reinforced engineering best practices to raise consistency and
+    code quality across deliverables.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2023-10
   endDate: 2024-03
+  summary: Drove business-critical engineering initiatives, combining hands-on delivery with
+    technical direction, system design, performance optimization, and mentoring.
   highlights:
-  - Leading development initiatives for business-critical projects, ensuring delivery of high-impact solutions aligned with organizational objectives
-  - Drove performance optimization and stability improvements across system-critical components, enhancing overall platform reliability
-  - Writing and reviewing system design documents to establish technical standards and architectural best practices
-  - Developed strategic roadmaps and technical vision for key projects, guiding long-term development priorities
-  - Mentored engineering teams through rigorous code review processes, maintaining code quality and knowledge sharing
+  - Led development initiatives for business-critical projects, keeping technical execution
+    aligned with organizational priorities.
+  - Drove performance optimization and stability improvements across critical platform
+    components to improve reliability. For example, identified major API gateway bottlenecks
+    and delivered optimizations that significantly reduced delays in delivering market data
+    to clients.
+  - Authored and reviewed system design documents and technical standards to guide consistent
+    architectural decisions.
 - name: Deriv
   url: https://deriv.com
   position: Technical Lead
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2023-01
   endDate: 2023-10
+  summary: Owned technical design and delivery oversight for high-priority projects while
+    supporting production reliability.
   highlights:
-  - Architected detailed design specifications for feature development and system integrations, streamlining development workflows
-  - Provided expert technical consultation to team members, facilitating informed decision-making across complex projects
-  - Diagnosed and resolved production system issues, maintaining operational stability and service reliability
-  - Leading technical delivery of high-priority projects through strategic oversight and hands-on leadership
+  - Established RFC processes and review governance for critical features, including
+    system design documentation for complex platform changes.
+  - Architected detailed design specifications for integrating a new trading platform into
+    the Deriv ecosystem.
+  - Diagnosed and resolved production issues.
 - name: Deriv
   url: https://deriv.com
   position: Team Lead
   location: Cyberjaya, Selangor, Malaysia
   startDate: 2020-03
   endDate: 2023-01
+  summary: Led and scaled a backend engineering team, improving delivery processes, technical
+    governance, production resilience, and talent development.
   highlights:
-  - Scaled and optimized backend development operations by leading a diverse team of up to 14 engineers, implementing strategic process improvements that enhanced software delivery lifecycle efficiency
-  - Collaborated with senior stakeholders to align technical solutions with business objectives, ensuring timely delivery of trading platform enhancements while maintaining quality standards
-  - Established technical governance through standardized RFC processes and comprehensive code review protocols, personally developing system design documentation for critical platform features
-  - Built high-performance team culture through structured performance management, conducting regular career development sessions that supported individual growth trajectories within the organization
-  - Maintained operational resilience by leading production incident response and resolution efforts, combining technical problem-solving with team coordination to minimize business impact
-  - Demonstrated thought leadership by contributing to organizational talent development through the Deriv BeSquare program, structuring backend development curriculum and mentoring emerging IT professionals
+  - Led a backend team of up to 14 engineers, improving delivery lifecycle efficiency through
+    process improvements, prioritization, and technical guidance.
+  - Collaborated with stakeholders to align backend solutions with business priorities for
+    trading platform enhancements.
+  - Led production incident response and resolution, coordinating engineers to minimize
+    operational and business impact.
+  - Contributed to the Deriv BeSquare program by creating backend curriculum and mentoring
+    emerging IT talent.
 - name: Deriv
   url: https://deriv.com
   position: Backend Developer
   location: Cyberjaya, Malaysia
   startDate: 2019-09
   endDate: 2020-03
+  summary: Built backend platform features and P2P payment services while supporting code
+    quality and trading infrastructure reliability.
   highlights:
-  - Conducted code reviews across development teams, maintaining high coding standards and reducing production bugs by ensuring consistent code quality
-  - Developed and deployed P2P payment services, directly contributing to enhanced financial transaction capabilities and platform growth
-  - Implemented critical features and resolved system issues for trading platform infrastructure, improving overall functionality and system reliability
+  - Developed and deployed P2P payment services that expanded financial transaction
+    capabilities on the platform.
+  - Implemented features and fixes for trading infrastructure, improving functionality and
+    operational reliability.
 - name: REG.RU
   url: https://www.reg.ru
   position: Senior Software Engineer
-  location: Samara Region, Russian Federation
+  location: Remote 
   startDate: 2017-08
   endDate: 2019-07
+  summary: Maintained and extended backend systems for a large-scale domain registrar and hosting platform,
+    including caching, authentication, asynchronous processing, email, and partner tracking.
   highlights:
-  - Maintained and optimized high-performance backend systems including distributed caching, session management, user authentication, and asynchronous job processing for large-scale web hosting platform
-  - Developed robust email communication infrastructure with bulk messaging capabilities to support customer outreach and automated notification systems
-  - Implemented partner management and affiliate tracking system using modern software architecture patterns to support business development initiatives
-  - Participated in collaborative code review workflow ensuring adherence to software engineering best practices and continuous improvement of development processes
+  - Maintained high-performance backend components for distributed caching, session management,
+    user authentication, and asynchronous job processing.
+  - Developed bulk email infrastructure supporting customer outreach and automated
+    notifications.
+  - Implemented partner management and affiliate tracking systems to support business
+    development workflows.
 - name: uCoz
   url: https://www.ucoz.com
   position: Web Developer
   location: Saint Petersburg, Russian Federation
   startDate: 2016-08
   endDate: 2017-08
+  summary: Enhanced a large-scale SaaS CMS platform and built high-throughput market research
+    crawler tooling for CMS analysis at multi-million-site scale.
   highlights:
-  - Enhanced platform capabilities for a major SaaS solution supporting 1+ million active websites, directly impacting user experience and platform reliability
-  - Development of proprietary CMS market research tool, solving complex data collection challenges across 10+ million websites
-  - Optimized crawler performance to achieve 1,000 sites/minute analysis speed, implementing multi-criteria evaluation system with 1,000+ assessment parameters
-  - Generated comprehensive market insights enabling data-driven strategic decisions for platform development and competitive positioning
+  - Enhanced platform capabilities for a SaaS product supporting over 1M active websites,
+    improving user-facing functionality and reliability.
+  - Built proprietary CMS market research tooling to collect and analyze data across 10M+
+    websites.
+  - Optimized crawler throughput to approximately 1,000 sites/minute with 1,000+ evaluation
+    parameters for richer market insights.
 - name: i20.biz
   url: https://i20.biz
   position: Frontend Developer
-  location: Novosibirsk Region, Russian Federation
+  location: Remote 
   startDate: 2016-05
   endDate: 2016-07
-  highlights:
-  - Created comprehensive photo management solution using Angular, addressing client needs for organized visual asset storage
-  - Designed and implemented user-friendly interface that simplified complex photo collection workflows
-  - Was involved in development of back-office application that improved client efficiency in managing digital photo libraries
-  - Delivered responsive web platform enabling seamless photo organization and access across devices
+  summary: Built Angular-based user interfaces for photo management and back-office workflows,
+    turning complex asset-management tasks into clearer client-facing tools.
 - name: Freelance Web Development
   position: Freelance Web Developer
-  location: Saint Petersburg, Russian Federation
+  location: Remote 
   startDate: 2014-12
   endDate: 2016-04
+  summary: Delivered custom web applications and automated data extraction systems, translating
+    client business requirements into practical technical solutions.
   highlights:
-  - Designed and implemented concurrent web crawling systems for automated data extraction from diverse online databases and websites
-  - Leveraged Mojolicious web framework to build scalable applications and services, demonstrating adaptability across varied project requirements
-  - Collaborated with clients to translate business needs into technical solutions, delivering meaningful results through strategic technology implementation
+  - Designed concurrent web crawling systems for automated data extraction from diverse
+    online sources.
+  - Built scalable web applications and services with Mojolicious across varied client
+    requirements.
+  - Collaborated with clients to translate business needs into maintainable technical
+    implementations.
 - name: HOST
   url: https://hostco.ru/
   position: Lead System Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2008-03
   endDate: 2015-12
+  summary: Designed and built resilient enterprise infrastructure, virtualization,
+    backup, storage, and disaster recovery solutions to improve clients' business continuity.
   highlights:
-  - Designed resilient IT infrastructure solutions that eliminated single points of failure and minimized business disruption for enterprise clients across multiple industry sectors
-  - Optimized virtualization platforms and backup systems to enhance operational efficiency, enabling clients to achieve measurable improvements in system performance and resource allocation
-  - Collaborated with cross-functional teams to deliver tailored disaster recovery solutions that met stringent reliability requirements and regulatory compliance standards
-  - Maintained and troubleshot enterprise-grade hardware systems, storage networks, and backup technologies, ensuring consistent service delivery and client satisfaction
+  - Built a disaster recovery metro-cluster based on VMware vSphere and SRM for a banking client.
+  - Designed and planned a hardware migration from Moscow to Saint Petersburg to build
+    a disaster recovery site with regional outage protection for a major online retailer.
+  - Built VMware virtualization and HP Data Protector backup solutions for eight regional
+    branches of the Central Bank of the Russian Federation.
+  - Migrated an Oracle RAC cluster to new IBM Power hardware.
 - name: EvlNet LLC
   url: https://evlnet.ru
   position: IT Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2007-04
   endDate: 2008-02
+  summary: Managed Microsoft-based infrastructure for a private educational institution,
+    covering centralized domains, branch connectivity, VPN/firewall security, and Exchange.
   highlights:
-  - Managed mission-critical Microsoft IT infrastructure for private educational institution, ensuring operational continuity
-  - Streamlined multi-location operations by integrating branch offices into centralized domain network environment
-  - Strengthened network security through implementation of VPN infrastructure and firewall security using Microsoft ISA servers
-  - Sustained and enhanced MS Exchange communication platform, supporting organization-wide productivity
-  - Advanced technical proficiency in IT infrastructure management and complex system integration projects
+  - Managed mission-critical Microsoft IT infrastructure to support daily operations.
+  - Integrated branch offices into a centralized domain network environment.
+  - Implemented VPN connectivity and firewall security using Microsoft ISA servers.
+  - Supported MS Exchange communication systems for organization-wide productivity.
 - name: WebPlus
   position: First-Line Support Specialist
   location: Saint Petersburg, Russian Federation
   startDate: 2006-11
   endDate: 2007-04
+  summary: Provided first-line technical support for internet connectivity issues, combining
+    structured troubleshooting with clear client communication.
   highlights:
-  - Diagnosed and resolved complex internet connectivity issues for diverse client base, ensuring minimal service disruption and optimal network performance
-  - Analyzed technical problems systematically to deliver targeted recommendations and solutions that restored uninterrupted internet services
-  - Enhanced technical troubleshooting capabilities while developing strong customer service expertise in fast-paced support environment
+  - Diagnosed and resolved internet connectivity issues for clients, helping restore service
+    with minimal disruption.
+  - Analyzed technical problems systematically and delivered targeted recommendations or
+    fixes.
+  - Built strong troubleshooting, customer communication, and service-restoration skills in
+    a fast-paced support environment.
 skills:
 - name: Platform Engineering
   keywords:

@@ -2,18 +2,17 @@
 "$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Kirill Sysoev
-  label: Platform Engineer / Staff Engineer
+  label: Staff Platform Engineer
   image: images/profile.jpeg
   email: k.sysoev@me.com
   phone: "+60194877054"
   url: https://ksysoev.github.io
-  summary: Staff Engineer focused on platform engineering, cloud-native backend systems,
-    and developer enablement. Experienced in designing internal developer platforms,
-    API gateways, CI/CD workflows, infrastructure as code, and AWS-based services that
-    help product teams ship independently and reliably. Strong background in Go, Perl,
-    distributed systems, microservices, and software architecture, with a track record
-    of technical leadership, mentoring, production troubleshooting, and improving
-    platform reliability and engineering standards.
+  summary: Platform Engineer with a strong backend engineering background,
+    specializing in internal developer platforms, cloud-native infrastructure, 
+    and distributed systems. I build self-service platform capabilities that improve developer experience,
+    increase engineering autonomy, and enable teams to deliver software reliably at scale. 
+    Experienced in technical leadership, platform architecture, 
+    and designing systems that balance simplicity, scalability, and operational excellence.
   location:
     city: Nha Trang
     region: Khanh Hoa
@@ -47,7 +46,7 @@ work:
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
-  location: Cyberjaya, Selangor, Malaysia
+  location: Cyberjaya, Malaysia
   startDate: 2024-07
   endDate: 2025-10
   summary: Created and led the team responsible for the integration layer of a new
@@ -75,7 +74,7 @@ work:
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
-  location: Cyberjaya, Selangor, Malaysia
+  location: Cyberjaya, Malaysia
   startDate: 2023-10
   endDate: 2024-03
   summary: Drove business-critical engineering initiatives, combining hands-on delivery with
@@ -92,7 +91,7 @@ work:
 - name: Deriv
   url: https://deriv.com
   position: Technical Lead
-  location: Cyberjaya, Selangor, Malaysia
+  location: Cyberjaya, Malaysia
   startDate: 2023-01
   endDate: 2023-10
   summary: Owned technical design and delivery oversight for high-priority projects while
@@ -106,7 +105,7 @@ work:
 - name: Deriv
   url: https://deriv.com
   position: Team Lead
-  location: Cyberjaya, Selangor, Malaysia
+  location: Cyberjaya, Malaysia
   startDate: 2020-03
   endDate: 2023-01
   summary: Led and scaled a backend engineering team, improving delivery processes, technical

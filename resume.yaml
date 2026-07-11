@@ -116,8 +116,6 @@ work:
     process improvements, prioritization, and technical guidance.
   - Collaborated with stakeholders to align backend solutions with business priorities for
     trading platform enhancements.
-  - Led production incident response and resolution, coordinating engineers to minimize
-    operational and business impact.
   - Contributed to the Deriv BeSquare program by creating backend curriculum and mentoring
     emerging IT talent.
 - name: Deriv
@@ -131,8 +129,6 @@ work:
   highlights:
   - Developed and deployed P2P payment services that expanded financial transaction
     capabilities on the platform.
-  - Implemented features and fixes for trading infrastructure, improving functionality and
-    operational reliability.
 - name: REG.RU
   url: https://www.reg.ru
   position: Senior Software Engineer
@@ -159,8 +155,6 @@ work:
   highlights:
   - Enhanced platform capabilities for a SaaS product supporting over 1M active websites,
     improving user-facing functionality and reliability.
-  - Built proprietary CMS market research tooling to collect and analyze data across 10M+
-    websites.
   - Optimized crawler throughput to approximately 1,000 sites/minute with 1,000+ evaluation
     parameters for richer market insights.
 - name: i20.biz

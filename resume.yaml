@@ -202,37 +202,32 @@ work:
 skills:
 - name: Platform Engineering
   keywords:
-  - Internal Developer Platforms
-  - Developer Enablement
+  - GitOps
   - API Gateway
-  - CI/CD
-  - Infrastructure as Code
-  - Kubernetes
-  - Grafana
+  - Event Bus
+  - Authentication & Authorization 
+  - Developer Experience
 - name: Cloud & Infrastructure
   keywords:
-  - AWS
-  - Serverless
-  - Docker
-  - Linux
+  - AWS CloudFormation
+  - AWS ECS
+  - AWS EventBridge
+  - AWS Lambda
+  - AWS Cognito
 - name: Backend & Distributed Systems
   keywords:
   - Go
-  - Distributed Systems
-  - Event-Driven Architecture
-  - Message Queues
-  - PostgreSQL
   - Redis
+  - PostgreSQL
+  - OpenTelemetry
+  - Message Queues
 - name: Architecture & Technical Leadership
   keywords:
-  - System Design
-  - Software Architecture
+  - Event-Driven Architecture
   - Domain-Driven Design
   - Technical Strategy
   - Team Leadership
-  - Mentoring
-  - Coaching
-  - Code Review
+  - Stakeholder Management
 languages:
 - language: English
   fluency: Full Professional

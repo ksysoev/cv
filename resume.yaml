@@ -72,12 +72,6 @@ work:
   endDate: 2024-06
   summary: Delivered an enterprise inventory management platform and strengthened engineering
     practices through standards, reviews, testing, and mentoring.
-  highlights:
-  - Architected and delivered a scalable inventory management system with a Go backend
-    and React frontend for enterprise operations.
-    frameworks.
-  - Mentored developers and reinforced engineering best practices to raise consistency and
-    code quality across deliverables.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
@@ -182,15 +176,8 @@ work:
   location: Remote 
   startDate: 2014-12
   endDate: 2016-04
-  summary: Delivered custom web applications and automated data extraction systems, translating
+  summary: Delivered custom web applications and custom tailored web-crawlers, translating
     client business requirements into practical technical solutions.
-  highlights:
-  - Designed concurrent web crawling systems for automated data extraction from diverse
-    online sources.
-  - Built scalable web applications and services with Mojolicious across varied client
-    requirements.
-  - Collaborated with clients to translate business needs into maintainable technical
-    implementations.
 - name: HOST
   url: https://hostco.ru/
   position: Lead System Engineer
@@ -203,9 +190,6 @@ work:
   - Built a disaster recovery metro-cluster based on VMware vSphere and SRM for a banking client.
   - Designed and planned a hardware migration from Moscow to Saint Petersburg to build
     a disaster recovery site with regional outage protection for a major online retailer.
-  - Built VMware virtualization and HP Data Protector backup solutions for eight regional
-    branches of the Central Bank of the Russian Federation.
-  - Migrated an Oracle RAC cluster to new IBM Power hardware.
 - name: EvlNet LLC
   url: https://evlnet.ru
   position: IT Engineer
@@ -214,11 +198,6 @@ work:
   endDate: 2008-02
   summary: Managed Microsoft-based infrastructure for a private educational institution,
     covering centralized domains, branch connectivity, VPN/firewall security, and Exchange.
-  highlights:
-  - Managed mission-critical Microsoft IT infrastructure to support daily operations.
-  - Integrated branch offices into a centralized domain network environment.
-  - Implemented VPN connectivity and firewall security using Microsoft ISA servers.
-  - Supported MS Exchange communication systems for organization-wide productivity.
 - name: WebPlus
   position: First-Line Support Specialist
   location: Saint Petersburg, Russian Federation
@@ -226,13 +205,6 @@ work:
   endDate: 2007-04
   summary: Provided first-line technical support for internet connectivity issues, combining
     structured troubleshooting with clear client communication.
-  highlights:
-  - Diagnosed and resolved internet connectivity issues for clients, helping restore service
-    with minimal disruption.
-  - Analyzed technical problems systematically and delivered targeted recommendations or
-    fixes.
-  - Built strong troubleshooting, customer communication, and service-restoration skills in
-    a fast-paced support environment.
 skills:
 - name: Platform Engineering
   keywords:

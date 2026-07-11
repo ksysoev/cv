@@ -56,11 +56,11 @@ work:
     built around AWS EventBridge, and an API gateway for frontend and mobile apps to
     application services based on the Zuplo SaaS platform.
   highlights:
+  - Designed and standardized service-to-service request contract, enabling secure,
+    traceable, and auditable communication across distributed systems.
   - Built all three platforms using a GitOps approach, enabling each application team
     to move independently and deliver changes to staging and production with minimal
     external dependencies.
-  - Designed and introduced conventions for service-to-service communication, making
-    platform interactions secure, traceable, and auditable end to end.
   - Built an audit-log capability on top of the event-driven communication platform,
     giving application teams a straightforward way to understand and debug service behavior.
 - name: CyberOwl
@@ -156,19 +156,11 @@ work:
     improving user-facing functionality and reliability.
   - Optimized crawler throughput to approximately 1,000 sites/minute with 1,000+ evaluation
     parameters for richer market insights.
-- name: i20.biz
-  url: https://i20.biz
-  position: Frontend Developer
-  location: Remote 
-  startDate: 2016-05
-  endDate: 2016-07
-  summary: Built Angular-based user interfaces for photo management and back-office workflows,
-    turning complex asset-management tasks into clearer client-facing tools.
 - name: Freelance Web Development
   position: Freelance Web Developer
   location: Remote 
   startDate: 2014-12
-  endDate: 2016-04
+  endDate: 2016-07
   summary: Delivered custom web applications and custom-tailored web crawlers, translating
     client business requirements into practical technical solutions.
 - name: HOST

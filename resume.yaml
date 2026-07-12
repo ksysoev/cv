@@ -56,33 +56,22 @@ work:
   url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Malaysia
-  startDate: 2023-10
+  startDate: 2023-01
   endDate: 2024-03
-  summary: Drove business-critical engineering initiatives, combining hands-on delivery with
-    technical direction, system design, performance optimization, and mentoring.
+  summary: Led technical design and delivery for high-priority, business-critical initiatives,
+    combining system design, hands-on engineering, performance optimization, and production reliability work.
   highlights:
   - Led development initiatives for business-critical projects, keeping technical execution
     aligned with organizational priorities.
-  - Drove performance optimization and stability improvements across critical platform
-    components to improve reliability. For example, identified major API gateway bottlenecks
-    and delivered optimizations that significantly reduced delays in delivering market data
-    to clients.
-  - Authored and reviewed system design documents and technical standards to guide consistent
-    architectural decisions.
-- name: Deriv
-  url: https://deriv.com
-  position: Technical Lead
-  location: Cyberjaya, Malaysia
-  startDate: 2023-01
-  endDate: 2023-10
-  summary: Owned technical design and delivery oversight for high-priority projects while
-    supporting production reliability.
-  highlights:
   - Established RFC processes and review governance for critical features, including
     system design documentation for complex platform changes.
   - Produced detailed design specifications for integrating a new trading platform into
     the Deriv ecosystem.
-  - Diagnosed and resolved production issues.
+  - Drove performance optimization and stability improvements across critical platform
+    components to improve reliability, including resolving major API gateway bottlenecks
+    that significantly reduced delays in delivering market data to clients.
+  - Diagnosed and resolved production issues while authoring and reviewing technical standards
+    to guide consistent architectural decisions.
 - name: Deriv
   url: https://deriv.com
   position: Team Lead

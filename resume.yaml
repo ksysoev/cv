@@ -2,7 +2,7 @@
 "$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Kirill Sysoev
-  label: Staff Platform Engineer
+  label: Platform Engineer
   image: images/profile.jpeg
   email: k.sysoev@me.com
   phone: "+60194877054"
@@ -31,45 +31,40 @@ work:
   location: Limassol, Cyprus
   startDate: 2025-11
   endDate: 2026-05
-  summary: Built a third-party API developer platform that enabled internal
-    application teams to publish service APIs for external developers with independent
-    lifecycle management. Designed and delivered a custom API gateway, then migrated
-    all production traffic from an external SaaS platform to the new internal gateway.
+  summary: Led two strategic platform initiatives, designed and delivered an in-house API gateway platform,
+    replacing a third-party SaaS solution, and built a third-party API developer platform that enabled product
+    teams to securely expose APIs to external developers with self-service lifecycle management.
   highlights:
-  - Designed and delivered a developer platform for third-party APIs, giving service
-    teams ownership of API configuration, documentation, and release workflows while making
-    APIs discoverable and usable by external developers.
-  - Architected and shipped a custom Go-based API gateway platform on AWS EKS with GitHub
-    CI/CD and feature deployments.
-  - Migrated all production traffic from external SaaS API gateways to in-house solution and scaled the
-    gateway platform to 30M+ daily requests, reducing API management costs from $12,000+/month to about $400/month.
+  - Architected and delivered a custom Go-based API gateway platform on AWS EKS, providing authentication, caching, routing,
+    traffic management, observability, and deployment automation. 
+  - Planned and executed the migration of 100% of production API traffic from a commercial API gateway to the in-house platform with no service disruption.
+  - Scaled the gateway platform to process 30M+ requests per day while reducing API gateway costs from over $12,000/month to approximately $400/month.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
   location: Cyberjaya, Malaysia
   startDate: 2024-07
   endDate: 2025-10
-  summary: Created and led the team responsible for the integration layer of a new
-    trading platform. Designed and drove implementation of three development platforms
-    that gave application teams a unified way to solve common integration problems,
-    including service-to-service authentication based on AWS Cognito, event-driven communication
-    built around AWS EventBridge, and an API gateway for frontend and mobile apps to
-    application services based on the Zuplo SaaS platform.
-  highlights:
-  - Designed and standardized service-to-service request contract, enabling secure,
+  summary: Established and led the Integration Platform team for a new trading platform. 
+    Defined the integration architecture and delivered three shared platform capabilities 
+    that standardized service communication and enabled application teams to build and operate services independently. 
+  highlights: 
+  - Architected and delivered three platform products, service-to-service authentication,
+    event-driven communication, and API gateways. 
+  - Designed and standardized a service-to-service request contract, providing secure, 
     traceable, and auditable communication across distributed systems.
-  - Built all three platforms using a GitOps approach, enabling each application team
-    to move independently and deliver changes to staging and production with minimal
-    external dependencies.
-  - Built an audit-log capability on top of the event-driven communication platform,
-    giving application teams a straightforward way to understand and debug service behavior.
+  - Built the platforms using a GitOps operating model, enabling application teams to provision,
+    configure, and deploy integrations independently without platform team involvement. 
+  - Designed and implemented an audit logging capability on top of the event platform,
+    giving engineers end-to-end visibility into cross-service workflows 
+    and simplifying production troubleshooting.
 - name: CyberOwl
   url: https://cyberowl.io
   position: Lead Software Developer
   location: Remote 
   startDate: 2024-03
   endDate: 2024-06
-  summary: Delivered an enterprise inventory management platform and strengthened engineering
+  summary: Delivered an vessel inventory management and strengthened engineering
     practices through standards, reviews, testing, and mentoring.
 - name: Deriv
   url: https://deriv.com

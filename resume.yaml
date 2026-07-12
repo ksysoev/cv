@@ -31,11 +31,11 @@ work:
   location: Limassol, Cyprus
   startDate: 2025-11
   endDate: 2026-05
-  summary: Led two strategic platform initiatives, designed and delivered an in-house API gateway platform,
-    replacing a third-party SaaS solution, and built a third-party API developer platform that enabled product
+  summary: Led two strategic platform initiatives, building an in-house API gateway platform
+    to replace a third-party SaaS solution, and creating a third-party API developer platform that enabled product
     teams to securely expose APIs to external developers with self-service lifecycle management.
   highlights:
-  - Architected and delivered a custom Go-based API gateway platform on AWS EKS, providing authentication, caching, routing,
+  - Implemented a custom Go-based API gateway platform on AWS ECS, providing authentication, caching, routing,
     traffic management, observability, and deployment automation. 
   - Planned and executed the migration of 100% of production API traffic from a commercial API gateway to the in-house platform with no service disruption.
   - Scaled the gateway platform to process 30M+ requests per day while reducing API gateway costs from over $12,000/month to approximately $400/month.
@@ -49,13 +49,13 @@ work:
     Defined the integration architecture and delivered three shared platform capabilities 
     that standardized service communication and enabled application teams to build and operate services independently. 
   highlights: 
-  - Architected and delivered three platform products, service-to-service authentication,
+  - Established three platform products for service-to-service authentication,
     event-driven communication, and API gateways. 
-  - Designed and standardized a service-to-service request contract, providing secure, 
+  - Standardized a service-to-service request contract, providing secure, 
     traceable, and auditable communication across distributed systems.
-  - Built the platforms using a GitOps operating model, enabling application teams to provision,
+  - Implemented the platforms through a GitOps operating model, enabling application teams to provision,
     configure, and deploy integrations independently without platform team involvement. 
-  - Designed and implemented an audit logging capability on top of the event platform,
+  - Added an audit logging capability on top of the event platform,
     giving engineers end-to-end visibility into cross-service workflows 
     and simplifying production troubleshooting.
 - name: CyberOwl
@@ -64,8 +64,7 @@ work:
   location: Remote 
   startDate: 2024-03
   endDate: 2024-06
-  summary: Delivered an vessel inventory management and strengthened engineering
-    practices through standards, reviews, testing, and mentoring.
+  summary: Implemented a vessel inventory management platform with Go and React.
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
@@ -94,7 +93,7 @@ work:
   highlights:
   - Established RFC processes and review governance for critical features, including
     system design documentation for complex platform changes.
-  - Architected detailed design specifications for integrating a new trading platform into
+  - Produced detailed design specifications for integrating a new trading platform into
     the Deriv ecosystem.
   - Diagnosed and resolved production issues.
 - name: Deriv
@@ -103,10 +102,10 @@ work:
   location: Cyberjaya, Malaysia
   startDate: 2020-03
   endDate: 2023-01
-  summary: Led and scaled a backend engineering team, improving delivery processes, technical
+  summary: Scaled a backend engineering team while improving delivery processes, technical
     governance, production resilience, and talent development.
   highlights:
-  - Led a backend team of up to 14 engineers, improving delivery lifecycle efficiency through
+  - Managed a backend team of up to 14 engineers, improving delivery lifecycle efficiency through
     process improvements, prioritization, and technical guidance.
   - Collaborated with stakeholders to align backend solutions with business priorities for
     trading platform enhancements.
@@ -118,7 +117,7 @@ work:
   location: Cyberjaya, Malaysia
   startDate: 2019-09
   endDate: 2020-03
-  summary: Built backend platform features and P2P payment services while supporting code
+  summary: Implemented backend platform features and P2P payment services while supporting code
     quality and trading infrastructure reliability.
   highlights:
   - Developed and deployed P2P payment services that expanded financial transaction
@@ -143,7 +142,7 @@ work:
   location: Saint Petersburg, Russian Federation
   startDate: 2008-03
   endDate: 2015-12
-  summary: Designed and delivered enterprise infrastructure, virtualization, backup, storage, and disaster recovery solutions for business-critical environments.
+  summary: Modernized enterprise infrastructure, virtualization, backup, storage, and disaster recovery capabilities for business-critical environments.
 skills:
 - name: Platform Engineering
   keywords:
@@ -165,7 +164,7 @@ skills:
   - Redis
   - PostgreSQL
   - OpenTelemetry
-  - Message Queues
+  - Message Queueis
 - name: Architecture & Technical Leadership
   keywords:
   - Event-Driven Architecture
@@ -183,8 +182,8 @@ projects:
   url: https://make-it-public.dev
   description: Go reverse proxy and tunneling service for securely exposing private/local services to the public internet.
   highlights:
-  - Designed a client/server architecture that routes public HTTP and TCP traffic to services running behind NAT or private networks.
-  - Built secure token-based authentication and TLS-enabled deployment options for safer public exposure of local services.
+  - Created a client/server architecture that routes public HTTP and TCP traffic to services running behind NAT or private networks.
+  - Added secure token-based authentication and TLS-enabled deployment options for safer public exposure of local services.
   - Packaged the tool for practical developer workflows with Docker, Homebrew, prebuilt releases, CI, and automated tests.
   keywords:
   - Go
@@ -195,7 +194,7 @@ projects:
   url: https://github.com/ksysoev/wsget
   description: Go CLI for interactive WebSocket testing, scripting, and debugging.
   highlights:
-  - Built an interactive WebSocket client supporting text, JSON, and binary messages with optional session output capture.
+  - Implemented an interactive WebSocket client supporting text, JSON, and binary messages with optional session output capture.
   - Implemented terminal editing features including request history, fuzzy search, autocomplete, and keyboard-driven workflows.
   keywords:
   - Go

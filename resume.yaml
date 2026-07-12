@@ -28,36 +28,23 @@ work:
 - name: Deriv
   url: https://deriv.com
   position: Staff Engineer
-  location: Limassol, Cyprus
-  startDate: 2025-11
+  location: Cyberjaya, Malaysia / Limassol, Cyprus
+  startDate: 2024-07
   endDate: 2026-05
-  summary: Led two strategic platform initiatives, building an in-house API gateway platform
-    to replace a third-party SaaS solution, and creating a third-party API developer platform that enabled product
-    teams to securely expose APIs to external developers with self-service lifecycle management.
+  summary: Established and led platform engineering initiatives for a new trading platform,
+    defining the integration architecture and delivering shared self-service capabilities
+    for service communication, API exposure, and external developer enablement.
   highlights:
-  - Implemented a custom Go-based API gateway platform on AWS ECS, providing authentication, caching, routing,
-    traffic management, observability, and deployment automation. 
+  - Established platform products for service-to-service authentication,
+    event-driven communication, and API gateways, enabling application teams to build and operate services independently.
+  - Implemented the platforms through a GitOps operating model, allowing teams to provision,
+    configure, and deploy integrations without direct platform team involvement.
+  - Built a custom Go-based API gateway platform on AWS ECS with authentication,
+    caching, routing, traffic management, observability, and deployment automation.
   - Planned and executed the migration of 100% of production API traffic from a commercial API gateway to the in-house platform with no service disruption.
   - Scaled the gateway platform to process 30M+ requests per day while reducing API gateway costs from over $12,000/month to approximately $400/month.
-- name: Deriv
-  url: https://deriv.com
-  position: Staff Engineer
-  location: Cyberjaya, Malaysia
-  startDate: 2024-07
-  endDate: 2025-10
-  summary: Established and led the Integration Platform team for a new trading platform. 
-    Defined the integration architecture and delivered three shared platform capabilities 
-    that standardized service communication and enabled application teams to build and operate services independently. 
-  highlights: 
-  - Established three platform products for service-to-service authentication,
-    event-driven communication, and API gateways. 
-  - Standardized a service-to-service request contract, providing secure, 
-    traceable, and auditable communication across distributed systems.
-  - Implemented the platforms through a GitOps operating model, enabling application teams to provision,
-    configure, and deploy integrations independently without platform team involvement. 
-  - Added an audit logging capability on top of the event platform,
-    giving engineers end-to-end visibility into cross-service workflows 
-    and simplifying production troubleshooting.
+  - Added audit logging and standardized request contracts across distributed systems,
+    improving traceability, operational visibility, and troubleshooting for cross-service workflows.
 - name: CyberOwl
   url: https://cyberowl.io
   position: Lead Software Developer

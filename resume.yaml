@@ -129,62 +129,21 @@ work:
   location: Remote 
   startDate: 2017-08
   endDate: 2019-07
-  summary: Maintained and extended backend systems for a large-scale domain registrar and hosting platform,
-    including caching, authentication, asynchronous processing, email, and partner tracking.
-  highlights:
-  - Maintained high-performance backend components for distributed caching, session management,
-    user authentication, and asynchronous job processing.
-  - Developed bulk email infrastructure supporting customer outreach and automated
-    notifications.
-  - Implemented partner management and affiliate tracking systems to support business
-    development workflows.
+  summary: Maintained and extended backend systems for a large-scale domain registrar and hosting platform, covering caching, authentication, asynchronous processing, email, and partner integrations.
 - name: uCoz
   url: https://www.ucoz.com
   position: Web Developer
   location: Saint Petersburg, Russian Federation
   startDate: 2016-08
   endDate: 2017-08
-  summary: Enhanced a large-scale SaaS CMS platform and built high-throughput market research
-    crawler tooling for CMS analysis at multi-million-site scale.
-  highlights:
-  - Enhanced platform capabilities for a SaaS product supporting over 1M active websites,
-    improving user-facing functionality and reliability.
-  - Optimized crawler throughput to approximately 1,000 sites/minute with 1,000+ evaluation
-    parameters for richer market insights.
-- name: Freelance Web Development
-  position: Freelance Web Developer
-  location: Remote 
-  startDate: 2014-12
-  endDate: 2016-07
-  summary: Delivered custom web applications and custom-tailored web crawlers, translating
-    client business requirements into practical technical solutions.
+  summary: Enhanced a large-scale SaaS CMS platform and built high-throughput crawler tooling for market research across millions of websites.
 - name: HOST
   url: https://hostco.ru/
   position: Lead System Engineer
   location: Saint Petersburg, Russian Federation
   startDate: 2008-03
   endDate: 2015-12
-  summary: Designed and built resilient enterprise infrastructure, virtualization,
-    backup, storage, and disaster recovery solutions to improve clients' business continuity.
-  highlights:
-  - Built a disaster recovery metro-cluster based on VMware vSphere and SRM for a banking client.
-  - Designed and planned a hardware migration from Moscow to Saint Petersburg to build
-    a disaster recovery site with regional outage protection for a major online retailer.
-- name: EvlNet LLC
-  url: https://evlnet.ru
-  position: IT Engineer
-  location: Saint Petersburg, Russian Federation
-  startDate: 2007-04
-  endDate: 2008-02
-  summary: Managed Microsoft-based infrastructure for a private educational institution,
-    covering centralized domains, branch connectivity, VPN/firewall security, and Exchange.
-- name: WebPlus
-  position: First-Line Support Specialist
-  location: Saint Petersburg, Russian Federation
-  startDate: 2006-11
-  endDate: 2007-04
-  summary: Provided first-line technical support for internet connectivity issues, combining
-    structured troubleshooting with clear client communication.
+  summary: Designed and delivered enterprise infrastructure, virtualization, backup, storage, and disaster recovery solutions for business-critical environments.
 skills:
 - name: Platform Engineering
   keywords:

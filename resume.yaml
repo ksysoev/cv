@@ -140,5 +140,5 @@ education:
 - institution: Samara State Aerospace University
   area: Hydraulics and Fluid Power, Pneumatics, Automatization
   studyType: Master's degree
-  startDate: 2006-09-01
-  endDate: 2012-07-01
+  startDate: "2006-09-01"
+  endDate: "2012-07-01"
